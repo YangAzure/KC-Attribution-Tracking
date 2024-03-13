@@ -1,0 +1,3570 @@
+,Order,SubjectID,ServerTimestamp,AssignmentID,ProblemID,Attempt,CodeStateID,Score,Code,Between,N Way,2xN,Other,OtherReason
+0,9519,085d5d1e61effabc440d74ac51b91d87,02/21/19 07:09 PM,439,234,1,d6ba1306c10e3d5037a9f437455f00d1fdb96b3e,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (cigars >= 40)
+    {
+        if (cigars <= 60 || isWeekend)
+            return true;
+        else
+            return false;
+    }
+    else
+        return false;
+}
+",0,0,0,0,
+1,22335,085d5d1e61effabc440d74ac51b91d87,02/21/19 06:56 PM,439,13,1,ddc22aa593f69bd098d03cd34086ff78361a0f37,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if (isBirthday)
+        speed += 5;
+    if (speed <= 60)
+        return 0;
+    else if (speed >=61 && speeed <= 80)
+        return 1;
+    else
+        return 2;
+}
+",0,0,1,1,Wrong variable
+2,36794,085d5d1e61effabc440d74ac51b91d87,02/21/19 07:22 PM,439,12,1,67b1689cc3f454ed979ad6352eee5fdf021da618,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    int upperTemp = 90;
+    if (isSummer)
+        upperTemp = 100;
+    if (temp >= 60 && temp <= upperTemp)
+        return true;
+    else
+        return false;
+}
+",0,0,0,0,
+3,39211,085d5d1e61effabc440d74ac51b91d87,02/21/19 07:02 PM,439,232,2,416d3f7357a9c177621a06babb4bd765236faab2,1,"public String alarmClock(int day, boolean vacation)
+{
+    if (day == 1 || day == 2 || day == 3 || day == 4 || day == 5)
+    {
+        if (vacation)
+            return ""10:00"";
+        else
+            return ""7:00"";
+    }
+    else
+    {
+        if (vacation)
+            return ""off"";
+        else
+            return ""10:00"";
+    }
+}
+",0,0,0,0,
+4,59278,085d5d1e61effabc440d74ac51b91d87,02/21/19 07:16 PM,439,233,1,7c96d36e8bed1ae8a6bceb30708f3c6dc22c2dd2,1,"public boolean love6(int a, int b)
+{
+    if (a == 6 || b == 6)
+        return true;
+    else if (a + b == 6 || Math.abs(a - b) == 6)
+        return true;
+    else
+        return false;
+}
+",0,0,0,0,
+5,64700,085d5d1e61effabc440d74ac51b91d87,02/21/19 07:14 PM,439,5,2,dbbed2b3b6e78dc89bf401c63b1f9f8188896159,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep)
+        return false;
+    else if (!isMorning || isMom)
+        return true;
+    else
+        return false;
+}
+",0,0,0,0,
+6,67999,085d5d1e61effabc440d74ac51b91d87,02/21/19 07:05 PM,439,235,1,1d55aabc82aa16a4b9ec00720ddf0d0d1357a6a9,0,"public int dateFashion(int you, int date)
+{
+    if (you >= 8 || date >= 8)
+    {
+        if (you <= 2 || date <= 2)
+            return 0;
+        else
+            return 2;
+    }
+    else
+        return 1;
+}
+",0,1,0,0,
+7,76040,085d5d1e61effabc440d74ac51b91d87,02/21/19 07:12 PM,439,236,1,b63f4fed4f3be17f670e0b2572d48876d5594909,1,"public int greenTicket(int a, int b, int c)
+{
+    if (a != b && b != c && a != c)
+        return 0;
+    else if (a == b && b == c && a == c)
+        return 20;
+    else
+        return 10;
+}
+",0,0,0,0,
+8,119048,085d5d1e61effabc440d74ac51b91d87,02/21/19 07:17 PM,439,1,1,541961e68eba731e1c4be1735b90a4e1f6eb9689,1,"public int sortaSum(int a, int b)
+{
+    if (a + b >= 10 && a + b <= 19)
+        return 20;
+    else
+        return a + b;
+}
+",0,0,0,0,
+9,133360,085d5d1e61effabc440d74ac51b91d87,02/21/19 07:19 PM,439,3,1,75a9ea65ba6c9c1117e46250a792f00de676a0ab,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode)
+    {
+        if (n <= 1 || n >= 10)
+            return true;
+    }
+    else
+    {
+        if (n >= 1 && n <= 10)
+            return true;
+    }
+    return false;
+}
+",0,0,0,0,
+10,12341,43a87a86ea9aee0255325e2865d6b503,02/25/19 02:24 AM,439,234,1,01a683260de62603480f7a44304f81ffb3e3f924,0,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (!isWeekend)
+        if ( cigars > 39 && cigars < 61)
+            return true;
+    else
+            return false;
+    else
+        return true;
+}
+",0,0,1,0,
+11,30335,43a87a86ea9aee0255325e2865d6b503,02/24/19 08:39 PM,439,13,3,1ce0a1f42d42be9a96ac2b9b15b102b8722e7198,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+   if ( speed <= 60)
+   {
+       return 0;
+   }
+    
+   else if ( speed >= 61 && speed <= 80)
+   {
+       return 1;
+   }
+   
+  else if(isBirthday)
+  {
+      speed = (speed +5);
+  }
+   else 
+   {
+       return 2;
+   }
+}
+",0,0,1,0,
+12,38312,43a87a86ea9aee0255325e2865d6b503,02/25/19 03:20 AM,439,12,5,3d56e316367ebfa901943e5eb4944c46278efd41,0,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if(isSummer)
+    {
+if (temp >= 60 && temp <= 100)
+           
+            return true;
+    }
+    
+    
+else if (temp >= 60 && temp <= 90)
+    {
+        return true;
+    }
+        
+   else 
+   {
+       return false;
+   }
+}
+",0,0,1,0,
+13,46423,43a87a86ea9aee0255325e2865d6b503,02/25/19 02:05 AM,439,232,3,e7bc70889c1d94a03cbb43c9d0a04cd40b46a435,1,"public String alarmClock(int day, boolean vacation)
+{
+    if (!vacation)
+    {
+        if (day == 0 || day == 6)
+            return ""10:00"";
+        else
+            return ""7:00"";
+    
+}
+    else if (day == 0 || day == 6)
+             return ""off"";
+    else 
+             return ""10:00"";
+ }
+",0,0,0,0,
+14,61735,43a87a86ea9aee0255325e2865d6b503,02/25/19 02:56 AM,439,233,1,3415c3e676e08229153c1091f3710972f21fcd74,0,"public boolean love6(int a, int b)
+{
+    if (a == 6)
+        return true;
+    else if (a + b == 6)
+        return true;
+    else if (a - b == 6 || b - a == 6)
+        return true;
+    else 
+return false;
+}
+",0,1,0,0,
+15,67266,43a87a86ea9aee0255325e2865d6b503,02/25/19 02:52 AM,439,5,1,d84b097121a5c2fd960a061d53788cce75d41a15,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep)
+        return false;
+    if ( isMorning && !isMom )
+        return false;
+    else 
+        return true;
+}
+",0,0,0,0,
+16,70587,43a87a86ea9aee0255325e2865d6b503,02/25/19 02:15 AM,439,235,1,2fb105f6d50f977d47d9ba5f453f73a9a4b3a2a6,0,"public int dateFashion(int you, int date)
+{
+   if (you > 7 || date > 7)
+       return 2;
+    else if (you < 3 || date < 3)
+        return 0;
+    else 
+        return 1;
+}
+",0,1,0,0,
+17,78865,43a87a86ea9aee0255325e2865d6b503,02/25/19 02:33 AM,439,236,1,489b4763e54d35ef9ff7c65618d0999b75eba352,0,"public int greenTicket(int a, int b, int c)
+{
+    if (a==b || b==c ||c==a)
+        return 20;
+    if (!a==b || !b==c ||!c==a)
+        return 0;
+    else
+        return 10;
+}
+",0,0,0,1,and or
+18,120960,43a87a86ea9aee0255325e2865d6b503,02/25/19 02:58 AM,439,1,1,956acbf620baf38946a4ffdd3dd3121297942c90,0,"public int sortaSum(int a, int b)
+{
+    if ( a + b > 10)
+        return 20;
+    else
+        return a + b;
+}
+",1,0,0,0,
+19,136299,43a87a86ea9aee0255325e2865d6b503,02/25/19 03:13 AM,439,3,7,dab7c7c14080446fef709be97daf3fd8d17269b9,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode)
+return (n <= 1 || n >= 10);
+return (n >= 1 && n <= 10);
+}
+",0,0,0,0,
+20,10002,222d97000e1b90c1ed0f97e5cd9c203d,02/23/19 09:12 PM,439,234,1,64d2baee85a29057ca4d6825220362803e761c89,0,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if(isWeekend)
+        return (cigars >= 40);
+    return (cigars >=400 && cigars <60);
+}
+",1,0,0,1,Typo
+21,25577,222d97000e1b90c1ed0f97e5cd9c203d,02/23/19 09:09 PM,439,13,1,99ff41498cfde106d76c4808a06479964bdde925,1,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if(isBirthday)
+        speed -= 5; 
+    if(speed <= 60)
+        return 0;
+    else if(speed <= 80)
+        return 1;
+    else
+        return 2;
+}
+",0,0,0,0,
+22,37091,222d97000e1b90c1ed0f97e5cd9c203d,02/23/19 09:33 PM,439,12,4,c89eb3cb6854c71aa06c7c4d3f59de06a3f1ffe9,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if(isSummer)
+        return (temp >= 60 && temp <= 100);
+    return (temp >= 60 && temp <= 90);
+}
+",0,0,0,0,
+23,40536,222d97000e1b90c1ed0f97e5cd9c203d,02/23/19 09:36 PM,439,232,1,97f92b9fc5cdef28772370002ac88d0aa967e294,1,"public String alarmClock(int day, boolean vacation)
+{
+    if(vacation)
+    {
+        if(day == 0 || day == 6)
+            return ""off"";
+        return ""10:00"";
+    }
+    else 
+    {
+        if(day == 0 || day == 6)
+            return ""10:00"";
+        return ""7:00"";
+    }
+}
+",0,0,0,0,
+24,59672,222d97000e1b90c1ed0f97e5cd9c203d,02/23/19 09:24 PM,439,233,1,8dbfba460b87ed76130cc4cc21d887083eb4e461,1,"public boolean love6(int a, int b)
+{
+    if (a == 6 || b == 6)
+        return true;
+    return ((a + b) == 6 || Math.abs(a - b) == 6);
+}
+",0,0,0,0,
+25,65362,222d97000e1b90c1ed0f97e5cd9c203d,02/23/19 09:22 PM,439,5,1,ad69800e3e2ddadfc28d63e79cde83a3506817e5,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if(isAsleep)
+        return false;
+    if(isMom)
+        return true;
+    return (!isMorning);
+}
+",0,0,0,0,
+26,68647,222d97000e1b90c1ed0f97e5cd9c203d,02/23/19 09:11 PM,439,235,1,2d9094473e9b7e7eb34618ef93bd26bb7bb4950a,1,"public int dateFashion(int you, int date)
+{
+    if(you <= 2 || date <= 2)
+        return 0;
+    if(you >= 8 || date >= 8)
+        return 2;
+    return 1;
+}
+",0,0,0,0,
+27,76721,222d97000e1b90c1ed0f97e5cd9c203d,02/23/19 09:20 PM,439,236,1,ac1f4b99f665e77671e3c692e7e37521e759a418,1,"public int greenTicket(int a, int b, int c)
+{
+    if(a == b)
+    {
+        if(b == c)
+            return 20;
+        return 10;
+    }
+    if(a == c || b ==c)
+        return 10;
+    return 0;
+}
+",0,0,0,0,
+28,119418,222d97000e1b90c1ed0f97e5cd9c203d,02/23/19 09:25 PM,439,1,1,af71b823b32f3814b330636231bcce1001f59ef8,1,"public int sortaSum(int a, int b)
+{
+    int sum = a + b;
+    if(sum >= 10 && sum <= 19)
+        return 20;
+    return sum;
+}
+",0,0,0,0,
+29,134093,222d97000e1b90c1ed0f97e5cd9c203d,02/23/19 09:26 PM,439,3,1,f89577186d1477fd4228f71b90f2a6c865ac5790,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if(outsideMode)
+        return (n<= 1 || n>= 10);
+    return (n >=1 && n <= 10);
+}
+",0,0,0,0,
+30,9703,a64a1476544db9bd76a6d1f024a3a8c6,02/22/19 08:42 PM,439,234,1,a79fa1c6e95416da7cf32d145f25ecf838cee140,0,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (isWeekend)
+    {
+        if ( cigars >= 40)
+            return true;
+    }
+    
+    else if (cigars >= 40 && cigars <= 60)
+        return true;
+    
+    else
+        return false;
+}
+",0,0,1,0,
+31,24308,a64a1476544db9bd76a6d1f024a3a8c6,02/22/19 08:20 PM,439,13,5,e0953c2b8566c2697927cce8da12659015ea25ba,1,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+      
+    if (isBirthday)
+    
+        speed -= 5;
+    
+      
+    if (speed <= 60)
+    
+        return 0;
+    
+    else if (speed >= 61 && speed <= 80)
+    
+        return 1;
+    
+    else
+    
+        return 2;
+   
+    
+}",0,0,0,0,
+32,36953,a64a1476544db9bd76a6d1f024a3a8c6,02/22/19 09:42 PM,439,12,1,8ed44fa647624ad71ffb2e811bbfe73b08856591,0,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (isSummer)
+    {
+        if ( temp >= 60 && temp <= 100)
+        {
+            return true;
+        }
+        else
+            return false;
+    }
+    
+}
+",0,0,1,0,
+33,39880,a64a1476544db9bd76a6d1f024a3a8c6,02/22/19 08:27 PM,439,232,2,cebb9a176464031d2b86eace196a5017c04a2eeb,1,"public String alarmClock(int day, boolean vacation)
+{
+    if (vacation)
+    {
+        if (day == 0 || day == 6)
+            return ""off"";
+            else 
+                return ""10:00"";
+                
+    }
+    else
+    {
+        if (day == 0 || day == 6)
+            return ""10:00"";
+            else
+                return ""7:00"";
+    }
+   
+    
+}
+",0,0,0,0,
+34,59466,a64a1476544db9bd76a6d1f024a3a8c6,02/22/19 09:22 PM,439,233,1,032f1a592ef44187c6292a9ce2e34bd9928594f7,0,"public boolean love6(int a, int b)
+{
+    if (a == Math.abs(6) || b == Math.abs(6))
+    {
+        return true;
+    }
+    
+    else if ( a + b = Math.abs(6) || a - b = Math.abs(6))
+    {
+        return true;
+    }
+    
+    else
+    {
+        return false;
+    }
+    
+}
+",0,0,0,1,Mathabs
+35,65115,a64a1476544db9bd76a6d1f024a3a8c6,02/22/19 09:06 PM,439,5,4,5a1937261fa3222393a2f4cab1a53413605eb831,0,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep)
+    {
+        return false;
+    }
+    else if (isMom)
+    {
+        return true;
+    }
+    else if (isMorning)
+    {
+        return false;
+    }
+    
+}
+",0,1,0,0,
+36,68318,a64a1476544db9bd76a6d1f024a3a8c6,02/22/19 08:36 PM,439,235,1,8b9144f93c9214b17e38444f2981e7182f1c8fb9,0,"public int dateFashion(int you, int date)
+{
+    if ( you <= 2 || date <= 2)
+        return 0;
+    if ( you >= 8 || date >= 8)
+        return 2;
+    else
+        return 0;
+
+}
+",0,0,0,1,Typo
+37,76470,a64a1476544db9bd76a6d1f024a3a8c6,02/22/19 09:00 PM,439,236,1,a8a22a9a1bd3b22feb2e886a03267bb53c143cbc,0,"public int greenTicket(int a, int b, int c)
+{
+    if ( a == b == c)
+    {
+        return 20;
+    }
+    
+    else if ( a == b || b == c || a == c)
+    {
+        return 10;
+    }
+     
+    else
+    {
+        return 0;
+    }
+    
+}
+",0,0,0,1,Three var comparison directly
+38,119173,a64a1476544db9bd76a6d1f024a3a8c6,02/22/19 09:30 PM,439,1,1,c023f1f9a5235584cd82493f7fa98d74c83c75f1,1,"public int sortaSum(int a, int b)
+{
+    int sum = a + b;
+    if (sum >= 10 && sum <= 19)
+        return 20;
+    else 
+        return sum;
+    
+}
+",0,0,0,0,
+39,133797,a64a1476544db9bd76a6d1f024a3a8c6,02/22/19 09:32 PM,439,3,1,537735cb60062eb471c830b79517c44776ee13c5,0,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode)
+        if ( n <= 1 || n >= 10)
+            return true;
+    else if ( n <= 10 && n >= 1)
+            return true;
+    else
+        return false;
+}
+",0,0,1,0,
+40,9642,8ae7398026ed8f2172aefd6cbc856bc8,02/22/19 06:43 AM,439,234,3,0f7d598f7d0b1073c13cfb753f68a7cefb22f0ec,0,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (!isWeekend)
+    {
+        if (cigars >= 40 && cigars <= 60)
+            return true;
+    }
+    
+   else if (isWeekend)
+   {
+       if (cigars >= 40)
+           return true;
+   }
+    else 
+        return false;
+}
+",0,0,1,0,
+41,22134,8ae7398026ed8f2172aefd6cbc856bc8,02/21/19 07:51 AM,439,13,9,c3022c187c3bce413eacf429a5f383312d438abc,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if (speed <= 60)
+    {
+        return 0;
+    }
+    else if (speed >=61 && speed <= 80)
+return 1;
+    else 
+        return 2;
+    
+    if (isBirthday)
+    {
+        speed == 5;
+    }
+}
+",0,0,1,0,
+42,36878,8ae7398026ed8f2172aefd6cbc856bc8,02/22/19 07:49 AM,439,12,6,96382d7a0952b9919b594af3a3ed851f800b97a7,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if(isSummer && 60 <= temp && temp <= 100)
+        return true;
+          
+    if(!isSummer && 60 <= temp && temp <= 90)
+        return true;
+                    
+    return false;
+}
+",0,0,0,0,
+43,39738,8ae7398026ed8f2172aefd6cbc856bc8,02/22/19 06:26 AM,439,232,6,b8afbfcaa8c8d18f27f01d96fbe0b12a3481af1b,1,"public String alarmClock(int day, boolean vacation)
+{
+    if(vacation) 
+    {
+        if(day == 0 || day == 6)
+            return ""off"";
+        else
+            return ""10:00"";
+    }
+                          
+    if(day == 0 || day == 6)
+        return ""10:00"";
+                                    
+    return ""7:00"";
+}
+",0,0,0,0,
+44,59375,8ae7398026ed8f2172aefd6cbc856bc8,02/22/19 07:07 AM,439,233,2,e407c63b5f73d146156a7df880bb175537c43408,0,"public boolean love6(int a, int b)
+{
+    if (a== 6 || b == 6)
+        return true;
+    else  if (Math.abs(6))
+         return true;
+         else 
+             return false;
+    
+}
+",0,1,0,0,
+45,64989,8ae7398026ed8f2172aefd6cbc856bc8,02/22/19 06:57 AM,439,5,2,7510220ccb38603b4e62cd07e7847291b82f8100,0,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep)
+        return false;
+      else if (!isMorning)
+        return true;
+    else if (isMorning)
+    {
+        if (isMom)
+            return true;
+        else 
+            return false;
+    }
+
+}
+",0,1,0,0,
+46,68159,8ae7398026ed8f2172aefd6cbc856bc8,02/22/19 06:35 AM,439,235,11,2a3151468cc8abcf39fc6c352794b2428bacc1bc,0,"public int dateFashion(int you, int date)
+{
+    if (you <= 2 || date <= 2)
+        return ""0"";
+}
+",0,1,0,1,
+47,76359,8ae7398026ed8f2172aefd6cbc856bc8,02/22/19 06:50 AM,439,236,2,f515e84fb122fa784468ddcfdd622c22aef4f1f6,0,"public int greenTicket(int a, int b, int c)
+{
+    if (a== b && b==c)
+        return ""20"";
+}
+",0,1,0,1,
+48,119130,8ae7398026ed8f2172aefd6cbc856bc8,02/22/19 07:31 AM,439,1,2,f75eef0e0e611c8447f88091d1b4c47c49d288d4,1,"public int sortaSum(int a, int b)
+{
+    int sum = a + b;
+    if(sum >= 10 && sum < 20)
+        return 20;
+    return sum;
+}
+",0,0,0,0,
+49,133717,8ae7398026ed8f2172aefd6cbc856bc8,02/22/19 07:40 AM,439,3,6,f5b8489e326a757ef39f6f70acefd02cd71ae77a,0,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode)
+    {
+    if (n == 10)
+      return True;
+    else
+      return False;
+          }
+  else
+  {
+    if (n >=1 && n <=10)
+      return True;
+    else
+      return False;
+  }
+}
+",1,0,0,0,
+50,10673,11d8ffa1c1cb79e22b6d94667d3847d9,02/24/19 04:13 PM,439,234,1,e13634493f7a013b479ebce68a7e3db687aac7c0,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (cigars <= 60 && cigars >= 40)
+    {
+    return true;
+    }
+    if (isWeekend && cigars >= 40)
+    {
+    return true;
+    }
+    if (cigars <= 40);
+    {
+    return false;
+    }
+}
+",0,0,0,0,
+51,27317,11d8ffa1c1cb79e22b6d94667d3847d9,02/24/19 06:31 AM,439,13,2,3c6955f3ee57682ce96f5b1dfc2e64935902ef91,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+   int noticket = 0;
+   int smallticket = 1;
+   int bigticket = 2;
+   int result = 0;
+   if (speed <= 60)
+   {
+    int result = 0;
+   }
+   
+
+}
+",1,0,1,0,
+52,37396,11d8ffa1c1cb79e22b6d94667d3847d9,02/24/19 04:43 PM,439,12,1,5e6a3a4cf0e7f5c5c16e71c40f3cbf811032930c,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (temp >= 60 && temp <= 90 && !isSummer)
+    {
+    return true;
+    }
+    else if (temp >= 60 && temp <= 100 && isSummer)
+    {
+    return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+",0,0,0,0,
+53,42240,11d8ffa1c1cb79e22b6d94667d3847d9,02/24/19 03:54 PM,439,232,4,d82b4b7d206e7f797809eaa652ee519dd2d0840a,0,"public String alarmClock(int day, boolean vacation)
+{
+    String alarm = ""off"";
+    if (day <= 5 && !vacation)
+    {
+    alarm = ""7:00"";
+    }
+    if (day >= 6 && !vacation)
+    {
+    alarm = ""10:00"";
+    }
+    if (day <= 5 && vacation)
+    {
+    alarm = ""10:00"";
+    }
+    if (day >= 6 && vacation)
+    {
+    alarm = ""off"";
+    }
+}
+",1,0,1,1,Misisng return
+54,60164,11d8ffa1c1cb79e22b6d94667d3847d9,02/24/19 04:32 PM,439,233,1,c2659935990c7b5b7f7ceb7b57447937589556e8,0,"public boolean love6(int a, int b)
+{
+    if (a = 6 || b = 6)
+    {
+    return true;
+    }
+    else if (a + b = 6 || a - b = 6)
+    {
+    return true;
+    }
+    else
+    {
+    return false;
+    }
+}
+",0,0,0,1,"Equality and assignment, mathabs"
+55,65838,11d8ffa1c1cb79e22b6d94667d3847d9,02/24/19 04:26 PM,439,5,1,6e0a00f9cf648ef3bf6a7ca348ed4a91a8a89e23,0,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (!isMorning && !isMom && !isAsleep)
+    {
+        return true;
+    }
+    if (isMorning && isMom)
+    {
+    return true;
+    }
+    else
+    {
+    return false;
+    }
+    if (isAsleep)
+    {
+    return false;
+    }
+}
+",0,1,0,0,
+56,69122,11d8ffa1c1cb79e22b6d94667d3847d9,02/24/19 04:07 PM,439,235,2,27e085f9778444fc94df5e4383e97a87b10d7111,0,"public int dateFashion(int you, int date)
+{
+    int no = 0;
+    int maybe = 1;
+    int yes = 2;
+    int result = 0;
+    if (you >= 8 || date >= 8)
+    {
+    result =  2;
+    }
+    else if (you <= 2 || date <= 2)
+    {
+    result = 0;
+    }
+    else
+    {
+    result = 1; 
+    }
+    return result;
+}
+",0,1,0,0,
+57,77256,11d8ffa1c1cb79e22b6d94667d3847d9,02/24/19 04:18 PM,439,236,1,74e1fad796688016fac31d1d4419811da9e349d6,0,"public int greenTicket(int a, int b, int c)
+{
+    int result = 0;
+    if (a = b && b = c && c = a)
+    {
+    result = 20;
+    }
+    else if ( a = b || b = c || a = c)
+    {
+    result = 10; 
+    }
+    else
+    {
+    result = 0;
+    }
+    return result;
+}
+",0,0,0,1,Equality and assignment
+58,119744,11d8ffa1c1cb79e22b6d94667d3847d9,02/24/19 04:36 PM,439,1,1,3b6e84d60b6d04c5c5af332981391c9a42c000f7,1,"public int sortaSum(int a, int b)
+{
+    int sum = a + b;
+    if (sum < 10)
+    {
+    return sum;
+    }
+    else if (sum > 19)
+    {
+    return sum;
+    }
+    else
+    {
+    return 20;
+    }
+}
+",0,0,0,0,
+59,134503,11d8ffa1c1cb79e22b6d94667d3847d9,02/24/19 04:38 PM,439,3,1,bd9842fa74a4999319c411a63ea0b765826626f1,0,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if ( n >= 1 && n <= 10 && !outsideMode)
+    {
+    return true;
+    }
+    else
+    {
+    return false;
+    }
+    if ( n <= 1 && n >= 10 && outsideMode)
+    {
+    return true;
+    }
+    else
+    {
+    return false;
+    }
+}
+",1,0,1,0,
+60,9882,7d95c1c55d84afc81845d9fb25c0cc0c,02/23/19 06:49 PM,439,234,2,e398d227a644aff061d31319aab4ad37c8897570,0,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if(isWeekend)
+        if(cigars>=40)
+            return true;
+    else if (cigars>=40 && cigars <=60)
+        return true;
+    return(cigars>=40);
+        
+}
+",0,0,1,0,
+61,25117,7d95c1c55d84afc81845d9fb25c0cc0c,02/23/19 06:16 PM,439,13,2,346e004b2f645af93be9a9725d0645df1ee66cfc,1,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+   if(isBirthday)
+speed -= 5;
+if(speed <= 60)
+return 0;
+else if(speed <= 80)
+return 1;
+else
+return 2;  
+    
+        
+}
+",0,0,0,0,
+62,37040,7d95c1c55d84afc81845d9fb25c0cc0c,02/23/19 06:26 PM,439,12,1,cdf031b34bad4d1092150d9b2c87ac5dfa19a804,0,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if(isSummer)
+        if(temp>=60 && temp<=100)
+            return true;
+    else
+        if(temp>=60 && temp<=90)
+            return true;
+    else return false;   
+}
+",0,0,1,0,
+63,40172,7d95c1c55d84afc81845d9fb25c0cc0c,02/23/19 06:21 PM,439,232,2,86fa3bedc4b0189ad5e4d5b463b09adf769d2ae4,1,"public String alarmClock(int day, boolean vacation)
+{
+    if(vacation)
+{
+if(day == 0 || day == 6)
+return ""off"";
+return ""10:00"";
+}
+else
+{
+if(day == 0 || day == 6)
+return ""10:00"";
+return ""7:00"";
+}
+}",0,0,0,0,
+64,59590,7d95c1c55d84afc81845d9fb25c0cc0c,02/23/19 06:36 PM,439,233,1,6cc6f2116ebd882c114f66d91237b224bdeb5f41,0,"public boolean love6(int a, int b)
+{
+    if (a=6 || b=6)
+        return true;
+    else
+        return false;
+}
+",0,1,0,0,
+65,65303,7d95c1c55d84afc81845d9fb25c0cc0c,02/23/19 06:39 PM,439,5,1,17ca6a9eab3e1b4b979d49dbdfe3861001c1e2d2,0,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isMorning)
+        if(isMom)
+            return true;
+    else if (isAsleep)
+        return false;
+    else
+        return true;
+}
+",0,1,0,0,
+66,68530,7d95c1c55d84afc81845d9fb25c0cc0c,02/23/19 06:56 PM,439,235,1,a72a326de2bb51a171e305bd9d03cc965aa42b55,0,"public int dateFashion(int you, int date)
+{
+    if (you>=8 || date>=8)
+        return 2;
+    else if (you<=2 || date<=2)
+        return 0;
+   return 1;
+    
+}
+",0,1,0,0,
+67,76618,7d95c1c55d84afc81845d9fb25c0cc0c,02/23/19 06:46 PM,439,236,1,534ae91f115368552481a9aaef0efd8fd371fdf5,0,"public int greenTicket(int a, int b, int c)
+{
+    if (a==b && b==c)
+        return 20;
+    else if (a==b || b==c || a=c)
+        return 10;
+    return 0;
+}
+",0,0,0,1,Equality and assignment
+68,119319,7d95c1c55d84afc81845d9fb25c0cc0c,02/23/19 06:35 PM,439,1,2,e975cb411a4c5d14b2ad08cf41894f38cbee60ee,1,"public int sortaSum(int a, int b)
+{
+    if ((a+b)>=10 && (a+b)<= 19)
+        return 20;
+    else
+        return (a+b);
+}
+",0,0,0,0,
+69,134008,7d95c1c55d84afc81845d9fb25c0cc0c,02/23/19 06:30 PM,439,3,2,c2f4317e13047861cb7bbd9c327e8b92af05f373,0,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if(outsideMode)
+        return (n<=1 || n>=10);
+     return(n>1 && n<10);
+}
+",1,0,0,0,
+70,9605,63ea3fef646010a7255aec506626ea32,02/21/19 09:50 PM,439,234,2,1b4b33eec439be689981d163a607c6a26444ef9d,0,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (isweekend == true)
+    {
+        if(cigars > 40)
+        {
+           return true; 
+        }
+        else
+        {
+           return false;
+        }
+    }
+    else 
+    {
+      if (cigars < 40 || cigars > 60)
+      {
+          return false;
+      }
+      else
+      {
+         return true; 
+      }
+    }
+}
+",1,0,0,1,typo
+71,23160,63ea3fef646010a7255aec506626ea32,02/21/19 08:36 PM,439,13,3,e9ac02c3e51abd629569b99cf507901bcdc024d3,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+   if (isBirthday == false)
+       if (speed <= 60)
+           return 0;
+    if (61 <= speed <= 80)
+            return 1;
+    else
+            return 2;
+    if(isBirthday == True)
+        if (speed <= 65)
+            return 0;
+    if (66 <= speed <= 85) 
+            return 1;
+    else 
+            return 2;
+}
+",1,0,1,1,typo
+72,36844,63ea3fef646010a7255aec506626ea32,02/21/19 10:22 PM,439,12,1,81fbfde57bedba51540b32198b8fbe372461d548,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (isSummer == false)
+    {
+        if (temp >= 60 && temp <= 90)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    else
+    {
+       if (temp >= 60 && temp <= 100)
+       {
+           return true;
+       }
+        else
+        {
+            return false;
+        }
+    }
+}
+",0,0,0,0,
+73,39581,63ea3fef646010a7255aec506626ea32,02/21/19 09:29 PM,439,232,2,6a70fa324e7229a50695fb6e8e34e402f0d9dea1,1,"public String alarmClock(int day, boolean vacation)
+{
+  if (vacation == false)
+  {
+      if (day == 0 || day == 6)
+      {
+          return ""10:00"";
+      }
+      else
+      {
+         return ""7:00""; 
+      }
+  }
+  else
+  {
+     if (day == 0 || day == 6)
+     {
+         return ""off"";
+     }
+     else
+     {
+       return ""10:00"";  
+     }
+  }
+}
+",0,0,0,0,
+74,59327,63ea3fef646010a7255aec506626ea32,02/21/19 10:12 PM,439,233,1,d08a60dae250ad8c89a040ab461e79d192cb9005,1,"public boolean love6(int a, int b)
+{
+   if (a == 6 || b == 6 || a + b == 6 || a - b == 6 || b - a == 6)
+   {
+       return true;
+   }
+    else
+    {
+        return false;
+    }
+}
+",0,0,0,0,
+75,64853,63ea3fef646010a7255aec506626ea32,02/21/19 10:09 PM,439,5,4,b56285c9b669dc25dfd5e359d58c9f0195a9650d,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep == false)
+    {
+        if (isMorning == true)
+        {
+            if (isMom == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+      else 
+       {
+          return true;
+    }
+    }
+   else
+   {
+      return false;
+   }
+        
+}",0,0,0,0,
+76,68088,63ea3fef646010a7255aec506626ea32,02/21/19 09:38 PM,439,235,2,a289b1e86dedbb1805833948bcbb666f3a9727a8,0,"public int dateFashion(int you, int date)
+{
+   if (you >= 8)
+   {
+       if (date > 2)
+       {
+           return 2;
+       }
+       else 
+       {
+           return 0;
+       }
+   }
+   else if (date >= 8)
+   {
+       if (you > 2)
+       {
+           return 2;
+       }
+       else
+       {
+           return 0;
+       }
+   }
+    else
+    {
+        return 1;
+    }
+}
+",0,1,0,0,
+77,76294,63ea3fef646010a7255aec506626ea32,02/21/19 09:55 PM,439,236,2,7adde529c0f399eaf6dfb1f2f2421763c5d17dfe,0,"public int greenTicket(int a, int b, int c)
+{
+    if (a = b = c)
+    {
+        return 20;
+    }
+    else if (a != b != c)
+    {
+        return 0;
+    }
+    else
+    {
+       return 10; 
+    }
+}
+",0,0,0,1,comparison of three numbers
+78,119069,63ea3fef646010a7255aec506626ea32,02/21/19 10:13 PM,439,1,1,22ea0886747c6850c7d266461c66a55385b19d47,0,"public int sortaSum(int a, int b)
+{
+    if (a + b == 10 || a + b == 19)
+    {
+        return 20;
+    }
+    else
+    {
+        return a + b;
+    }
+}
+",1,0,0,0,
+79,133557,63ea3fef646010a7255aec506626ea32,02/21/19 10:19 PM,439,3,1,580db77e6ed21b31f420fd10a2e9043f4cb620eb,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode == false)
+    {
+       if (n >= 1 && n <= 10)
+       {
+           return true;
+       }
+        else
+        {
+            return false;
+        }
+    }
+    else
+    {
+       if (n <= 1 || n >= 10)
+       {
+          return true; 
+       }
+        else
+        {
+            return false;
+        }
+    }
+}
+",0,0,0,0,
+80,10724,5d5945691b9139b2876f663bba098c83,02/24/19 06:11 PM,439,234,1,5ed7e0e9a86a759d891df02c85cecd61430d32a2,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (isWeekend) return (cigars >= 40);
+    return cigars >= 40 && cigars <= 60;
+}
+",0,0,0,0,
+81,28499,5d5945691b9139b2876f663bba098c83,02/24/19 06:07 PM,439,13,1,9440250168330afab791583582d92e882aaa990a,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+if (isBirthday == True) {
+        if (speed <= 65)
+            return 0;
+        else if (speed <= 85 && speed >= 66)
+            return 1;
+        else 
+            return 2;
+}
+    else {
+        if (speed <= 60)
+            return 0;
+        else if (speed <= 80 && speed >= 61)
+            return 1;
+        else
+            return 2;
+    }
+}
+",0,0,0,1,typo
+82,37422,5d5945691b9139b2876f663bba098c83,02/24/19 06:24 PM,439,12,1,9bb70782337a77d3aefb72ed0ff58241a42574d2,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (isSummer && temp <= 100 && temp >= 60)
+    return true;
+  if (!(isSummer) && temp <= 90 && temp >=60)
+    return true;
+  else
+    return false;
+}
+",0,0,0,0,
+83,42554,5d5945691b9139b2876f663bba098c83,02/24/19 06:10 PM,439,232,1,25d4b41994e0f4ca8b8e02c59fa55bc59233786e,1,"public String alarmClock(int day, boolean vacation)
+{
+    if (vacation) return (day >= 1 && day <= 5) ? ""10:00"" : ""off"";
+    return (day >= 1 && day <= 5) ? ""7:00"" : ""10:00"";
+}
+",0,0,0,0,
+84,60184,5d5945691b9139b2876f663bba098c83,02/24/19 06:17 PM,439,233,1,1c11595f93e5353b29929a918aab5c45b06c235b,0,"public boolean love6(int a, int b)
+{
+    if ( a == 6 || b == 6 || Math.abs( a - b ) == 6 || Math.abs( a + b ) == 6 )
+   return true;
+  else return false;
+}
+",0,0,0,1,Mathabs
+85,65892,5d5945691b9139b2876f663bba098c83,02/24/19 06:14 PM,439,5,1,49c7498cb030b913a6018f6005e10eb959b1459d,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep)
+    return false;
+  if ((isMorning && isMom) || !isMorning)
+    return true;
+  else return false;
+}
+",0,0,0,0,
+86,69180,5d5945691b9139b2876f663bba098c83,02/24/19 06:11 PM,439,235,1,165112103382e8336e2683e2f481aaa2d0887038,1,"public int dateFashion(int you, int date)
+{
+    if (you <= 2 || date <= 2) return 0;
+    return (you >= 8 && date >= 2 || date >= 8 && you >= 2) ? 2 : 1;
+}
+",0,0,0,0,
+87,77338,5d5945691b9139b2876f663bba098c83,02/24/19 06:13 PM,439,236,1,f90728cf2f890808b74bebef7d087ee340f103e1,1,"public int greenTicket(int a, int b, int c)
+{
+    if (a == b && b == c)
+    return 20;
+  if (a == b || a == c || b == c)
+    return 10;
+  else;
+    return 0;
+}
+",0,0,0,0,
+88,119767,5d5945691b9139b2876f663bba098c83,02/24/19 06:19 PM,439,1,1,c7e8655523eca18e2184d623ad81c1ae848173f1,1,"public int sortaSum(int a, int b)
+{
+    int sum = a+b;
+   
+  if(sum >= 10 && sum <= 19)
+    return 20;
+  else
+    return sum;
+}
+",0,0,0,0,
+89,134559,5d5945691b9139b2876f663bba098c83,02/24/19 06:21 PM,439,3,2,ebc8744c54e21e3b7a3ed480c091235c9a9d2372,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (!outsideMode){
+    if (n >= 1 && n <= 10) {
+      return true;
+    } else {
+        return false;
+      }
+  } else {
+      if (n <= 1 || n >= 10) {
+        return true;
+      } else {
+          return false;
+        }
+    }
+}
+",0,0,0,0,
+90,9612,8a701b176cc140888936dad15c5d046a,02/21/19 11:21 PM,439,234,1,f8c25d0608b78f91766b5d638caaa67efed341ef,0,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (isWeekend == true)
+    {
+        if (cigars >= 40)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    if (isWeekend == false)
+    {
+        if (cigars >= 40 && cigars <= 60)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
+",0,0,0,1,if not covering logically correct branches
+91,23289,8a701b176cc140888936dad15c5d046a,02/21/19 11:01 PM,439,13,1,b029d27f2fa5d1b9e19522f03232a427545454f0,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if (isBirthday == FALSE)
+        {
+        if (speed <= 60)
+        {
+            return 0;
+        }
+
+        if (speed >= 61 && speed <= 80)
+        {
+            return 1;
+        }
+
+        if (speed >= 81)
+        {
+            return 2;
+        }
+    }
+    
+    if (isBirthday == TRUE)
+        {
+        if (speed <= 65)
+        {
+            return 0;
+        }
+
+        if (speed >= 66 && speed <= 85)
+        {
+            return 1;
+        }
+
+        if (speed >= 86)
+        {
+            return 2;
+        }
+    }
+    
+    
+        
+}
+",0,0,0,1,"if not covering logically correct branches, variable"
+92,36846,8a701b176cc140888936dad15c5d046a,02/22/19 01:06 AM,439,12,1,410689246ac15638f6090816e65f8d27afca7f91,0,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (isSummer == false)
+    {
+        if (temp >= 60 && temp <= 90)
+        {
+            return true;
+        }
+        
+        else
+        {
+            return false;
+        }
+    }
+    
+    if (isSummer == true)
+    {
+      if (temp >= 60 && temp <= 100)
+        {
+            return true;
+        }
+        
+        else
+        {
+            return false;
+        }
+    }
+}
+",0,0,0,1,if not covering logically correct branches
+93,39585,8a701b176cc140888936dad15c5d046a,02/21/19 11:12 PM,439,232,1,fafb8868c14e38aaac44268568f5fc4b1483c46c,0,"public String alarmClock(int day, boolean vacation)
+{
+    if (vacation == false)
+    {
+        if (day >= 0 && day <= 4)
+        {
+            return ""7:00"";
+        }
+        
+        if (day >= 5 && day <= 6)
+        {
+            return ""10:00"";
+        }
+    }
+    
+    if (vacation == true)
+    {
+        if (day >= 0 && day <= 4)
+        {
+            return ""10:00"";
+        }
+        
+        if (day >= 5 && day <= 6)
+        {
+            return ""off"";
+        }
+    }
+    
+    
+}
+",1,0,0,1,if not covering logically correct branches
+94,59329,8a701b176cc140888936dad15c5d046a,02/22/19 12:54 AM,439,233,1,9165c22367f603c4757e34d1eb8a59bcb742c286,1,"public boolean love6(int a, int b)
+{
+    if ( a == 6 || b == 6)
+    {
+        return true;
+    }
+    
+    int c = Math.abs(a-b);
+    
+    if ( a+b == 6 || c ==6)
+    {
+        return true;
+    }
+    
+    else
+    {
+        return false;
+    }
+}
+",0,0,0,0,
+95,64861,8a701b176cc140888936dad15c5d046a,02/22/19 12:49 AM,439,5,2,19caffb55b90c3a7a5e463068b5ee34bc4f45320,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep == true)
+    {
+        return false;
+    }
+    
+    if (isMorning == true)
+    {
+        if (isMom == true)
+        {
+            return true;
+        }
+        
+        else
+        {
+            return false;
+        }
+    }
+    
+    else
+    {
+        return true;
+    }
+        
+    
+    
+}
+",0,0,0,0,
+96,68094,8a701b176cc140888936dad15c5d046a,02/21/19 11:17 PM,439,235,1,420f655df5a90b0ad09645ff0d5e79bed1c56c3b,0,"public int dateFashion(int you, int date)
+{
+    if (you >= 8 || date >= 8)
+    {
+        return 2;
+    }
+    
+    if (you <= 2 || date <= 2)
+    {
+        return 0;
+    }
+    
+    else
+    {
+        return 1;
+    }
+        
+}
+",0,1,0,0,
+97,76304,8a701b176cc140888936dad15c5d046a,02/22/19 12:40 AM,439,236,1,f7b1e276caffbaa4eea1ac5175b366542a993baf,0,"public int greenTicket(int a, int b, int c)
+{
+    if ( a == b && b == c)
+    {
+        return 20;
+    }
+    
+    if ( a != b && b != c && c!=a)
+    {
+        return 0;
+    }
+    
+    if ( a == b || a == c || b==c)
+    {
+        return 10;
+    }
+        
+}
+",0,0,0,1,if not covering logically correct branches
+98,119077,8a701b176cc140888936dad15c5d046a,02/22/19 12:55 AM,439,1,2,77b5981083ca6fe886146f2979a9fe00cf8dab63,1,"public int sortaSum(int a, int b)
+{
+    if ( a+b >= 10 && a+b <= 19)
+    {
+        return 20;
+    }
+    
+    else
+    {
+        return a+b;
+    }
+        
+}
+",0,0,0,0,
+99,133563,8a701b176cc140888936dad15c5d046a,02/22/19 12:58 AM,439,3,2,2d2cddc2b0757bcfb69cef1b4a8f432b70f48ac0,0,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode == false)
+    {
+        if ( n >= 1 && n <= 10)
+        {
+            return true;
+        }
+        
+        else
+        {
+            return false;
+        }
+    }
+    
+    if (outsideMode == true)
+    {
+        if ( n <= 1 || n >= 10)
+        {
+            return true;
+        }
+        
+        else
+        {
+            return false;
+        }
+    }
+                
+}
+",0,0,0,1,if not covering logically correct branches
+100,11171,62ef6dc6cdbfc1c60305b7d3d9a420a6,02/24/19 09:46 PM,439,234,1,ef056bb78c78bcf0a1f296438836216940c83e13,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (isWeekend)
+    {
+        return (cigars >= 40);
+    }
+    return (cigars >= 40 && cigars <= 60);
+}
+",0,0,0,0,
+101,30431,62ef6dc6cdbfc1c60305b7d3d9a420a6,02/24/19 08:50 PM,439,13,1,e19d8562310c8d13ddbb6a92e685095546c09c6a,1,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if (isBirthday)
+    {
+        if (speed <= 65)
+        {
+            return 0;
+        }
+        else if (66 <= speed && speed <= 85)
+        {
+            return 1;
+        }
+        else if (86 <= speed)
+        {
+         return 2;   
+        }
+    }
+    
+    if (speed <= 60)
+    {
+        return 0;
+    }
+    else if (61 <= speed && speed <= 80)
+    {
+        return 1;
+    }
+    else 
+    {
+        return 2;
+    }
+        
+}
+",0,0,0,0,
+102,37665,62ef6dc6cdbfc1c60305b7d3d9a420a6,02/24/19 10:06 PM,439,12,1,e3dd5ef9afc48e3e28f92a2175e51c7df7137297,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (isSummer)
+        return (temp >= 60 && temp <= 100);
+    return (temp >= 60 && temp <= 90);
+}
+",0,0,0,0,
+103,43720,62ef6dc6cdbfc1c60305b7d3d9a420a6,02/24/19 08:56 PM,439,232,1,8ec68728928764181910da4036caf900a3c00572,1,"public String alarmClock(int day, boolean vacation)
+{
+    if (vacation)
+    {
+        if (day == 0 || day ==6)
+        {
+            return ""off"";
+        }
+        else 
+        {
+            return ""10:00"";
+        }
+    }
+    if (day == 0 || day == 6)
+    {
+        return ""10:00"";
+    }
+    return ""7:00"";
+}
+",0,0,0,0,
+104,60758,62ef6dc6cdbfc1c60305b7d3d9a420a6,02/24/19 09:56 PM,439,233,1,69d83eafc4a39c693ab957a84b3af655abe94c67,1,"public boolean love6(int a, int b)
+{
+    if (a == 6 || b == 6)
+        return true;
+    return ((a + b) == 6 || Math.abs(a - b) == 6);
+}
+",0,0,0,0,
+105,66302,62ef6dc6cdbfc1c60305b7d3d9a420a6,02/24/19 09:54 PM,439,5,1,4b5fd3cb9a97c7389714cc477fd7b0ca0caab497,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep)
+        return false;
+    if (isMom)
+        return true;
+    return (!isMorning);
+}
+",0,0,0,0,
+106,69790,62ef6dc6cdbfc1c60305b7d3d9a420a6,02/24/19 09:42 PM,439,235,1,333ff17fb5804a0af8e32886d7d9bba6a05faeee,1,"public int dateFashion(int you, int date)
+{
+    if (you <= 2 || date <= 2)
+    {
+        return 0;
+    }
+    if (you >=8 || date >=8)
+    {
+        return 2;
+    }
+    return 1;
+}
+",0,0,0,0,
+107,77848,62ef6dc6cdbfc1c60305b7d3d9a420a6,02/24/19 09:48 PM,439,236,1,c7b52d5545da809e8f2bd498f31e775deed72a94,1,"public int greenTicket(int a, int b, int c)
+{
+    if (a == b)
+    {
+        if (b == c)
+        {
+            return 20;
+        }
+        return 10;
+    }
+    if (a == c || b == c)
+    {
+        return 10;
+    }
+    return 0;
+}
+",0,0,0,0,
+108,120028,62ef6dc6cdbfc1c60305b7d3d9a420a6,02/24/19 09:58 PM,439,1,1,dabb6c88956eefa2a8f61db122a76401d98aa717,1,"public int sortaSum(int a, int b)
+{
+    int sum = a + b;
+    if (sum >= 10 && sum <= 19)
+        return 20;
+    return sum;
+}
+",0,0,0,0,
+109,135077,62ef6dc6cdbfc1c60305b7d3d9a420a6,02/24/19 10:05 PM,439,3,1,220c4ce57002eba786d448b94ca1abd655ce44eb,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode)
+        return (n <= 1 || n >= 10);
+    return (n >= 1 && n <= 10);
+}
+",0,0,0,0,
+110,11704,115c51eb37365df2d4f4e2482b964822,02/25/19 12:30 AM,439,234,2,5c7c020661b5a443a9e74a698a09fbd7cd165438,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if(isWeekend)
+return (cigars >= 40);
+return (cigars >= 40 && cigars <= 60);
+}
+",0,0,0,0,
+111,33391,115c51eb37365df2d4f4e2482b964822,02/25/19 12:26 AM,439,13,3,760c64b1d4e22596f2d725e5694e49021b970a76,1,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if(isBirthday)
+speed -= 5; //  diff limit is higher now
+if(speed <= 60)
+return 0;
+else if(speed <= 80)
+return 1;
+else
+return 2;
+}
+",0,0,0,0,
+112,37849,115c51eb37365df2d4f4e2482b964822,02/25/19 12:35 AM,439,12,2,f801b7f1c7d07621498f16d525db3239e45597f7,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if(isSummer)
+    {
+     if(temp<=100 && temp>=60)
+     {
+      return true; 
+     }
+        else
+        {
+         return false;   
+        }
+    }
+    else
+    {
+         if(temp<=90 && temp>=60)
+     {
+      return true; 
+     }
+        else
+        {
+         return false;   
+        }
+    }
+}
+",0,0,0,0,
+113,45017,115c51eb37365df2d4f4e2482b964822,02/25/19 12:29 AM,439,232,2,edeac365f5d596c880521db86500b1490fd37092,0,"public String alarmClock(int day, boolean vacation)
+{
+    
+if(vacation)
+{
+if(day == 0 || day == 6)
+return ""off"";
+return ""10:00"";
+}
+else
+{
+if(day == 0 || day == 6)
+return ""10:00"";
+return ""7:00"";
+}
+}
+
+
+
+}
+",0,0,0,1,Extra bracket
+114,61035,115c51eb37365df2d4f4e2482b964822,02/25/19 12:31 AM,439,233,2,64c441b91c6444359e3395f400c7d03f944ec428,1,"public boolean love6(int a, int b)
+{
+    if(a == 6 || b == 6)
+return true;
+return ((a + b) == 6|| Math.abs(a - b) == 6);
+}
+",0,0,0,0,
+115,66666,115c51eb37365df2d4f4e2482b964822,02/25/19 12:31 AM,439,5,2,eac5017165ed03117eb2d717e5be3fd0bf4fcd02,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if(isAsleep)
+return false;
+if(isMom)
+return true;
+return (!isMorning);
+}
+",0,0,0,0,
+116,70113,115c51eb37365df2d4f4e2482b964822,02/25/19 12:30 AM,439,235,2,a79ed7869570d118f1756d6582d7c3935575310b,1,"public int dateFashion(int you, int date)
+{
+    
+if(you <= 2 || date <= 2)
+return 0;
+if(you >= 8 || date >= 8)
+return 2;
+return 1;
+}
+",0,0,0,0,
+117,78284,115c51eb37365df2d4f4e2482b964822,02/25/19 12:31 AM,439,236,2,9c5d6a7be18606c3d400575fae18e28339f1f319,1,"public int greenTicket(int a, int b, int c)
+{
+    if(a == b)
+{
+if(b == c)
+return 20;
+return 10;
+}
+if(a == c || b == c)
+return 10;
+return 0;
+}
+",0,0,0,0,
+118,120542,115c51eb37365df2d4f4e2482b964822,02/25/19 12:32 AM,439,1,2,db4d1976e17ee3a5ef0804ed4a7b46d605ad1811,1,"public int sortaSum(int a, int b)
+{
+   int sum = a + b;
+if(sum >= 10 && sum <= 19)
+return 20;
+return sum; 
+}
+",0,0,0,0,
+119,135405,115c51eb37365df2d4f4e2482b964822,02/25/19 12:32 AM,439,3,5,2d809887f1596f2f9b122f613e917d536ecee63f,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if(outsideMode)
+return (n <= 1 || n >= 10);
+return (n >= 1 && n <= 10);
+}
+",0,0,0,0,
+120,11889,a52fd55f42010405991a333187181f7e,02/25/19 01:21 AM,439,234,7,f68b36e75386bbe4d210562c431e769207c7a50b,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    boolean cigar = false;
+  if (isWeekend == true && cigars >= 40)
+    return cigar = true;
+  if (!(isWeekend) && cigars >=40 && cigars <= 60)
+    return cigar = true;
+  else
+    return cigar;
+
+}
+",0,0,0,0,
+121,33709,a52fd55f42010405991a333187181f7e,02/25/19 12:49 AM,439,13,5,f97af8c06b6daf203c73b3831b453e4a7a3c8d31,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if (speed <= 60)
+    {
+        return 0;
+    }
+}
+",1,0,1,0,
+122,37936,a52fd55f42010405991a333187181f7e,02/25/19 01:48 AM,439,12,7,8d108591e7947144107a9700695c15479d612ae0,0,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (isSummer)
+    {
+        if (temp >= 60 && temp <= 100)
+        {
+            return true;
+        }
+        return false;
+    }
+    if (!isSumer)
+    {
+        if (temp >= 60 && temp <= 90)
+        {
+            return true;
+        }
+        return false;
+    }
+}
+",0,0,0,1,typo
+123,45572,a52fd55f42010405991a333187181f7e,02/25/19 01:14 AM,439,232,17,fc3a1ba07138254d120d5e389cb4e0d99a8f1f8d,1,"public String alarmClock(int day, boolean vacation)
+{
+    String time = ""7:00"";
+     if(vacation) 
+     {
+        if(day == 0 || day == 6)
+            return time = ""off"";
+        else
+            return time = ""10:00"";
+    }
+                          
+    if(day == 0 || day == 6)
+        return time = ""10:00"";
+                                    
+    return time;
+}
+",0,0,0,0,
+124,61325,a52fd55f42010405991a333187181f7e,02/25/19 01:26 AM,439,233,11,0e3673b8a783a377a11c2e2ec7c776984daa1fb0,1,"public boolean love6(int a, int b)
+{
+  int total = a+b;
+  int minus = Math.abs(a-b);
+    if (a == 6 || b == 6)
+    return true;
+
+  if (total == 6 || minus == 6)
+    return true;
+  else
+    return false;
+
+}
+",0,0,0,0,
+125,66849,a52fd55f42010405991a333187181f7e,02/25/19 01:24 AM,439,5,7,1209dc7257e7768b8e03724230203bc6a55a014c,0,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if(isAsleep)
+return false;
+if(isMom)
+return true;
+    if (!isMorning)
+        return true;
+}
+",0,1,0,0,
+126,70285,a52fd55f42010405991a333187181f7e,02/25/19 01:17 AM,439,235,7,4f751695641937218f40d5bf4217bf1bb43cf4dd,1,"public int dateFashion(int you, int date)
+{
+    int time = 1;
+  if ((you >= 8 && date > 2) || (date >= 8 && you > 2))
+    return time = 2;
+  if (you <= 2 || date <= 2)
+    return time = 0;
+  else
+    return time;
+
+}
+",0,0,0,0,
+127,78408,a52fd55f42010405991a333187181f7e,02/25/19 01:22 AM,439,236,6,e47177271e83f9b665bcd937bc94c6a6055fa928,0,"public int greenTicket(int a, int b, int c)
+{
+    int number = 0;
+  if (a == b && b == c)
+    number = 20;
+  if (a == b || a == c || b == c)
+    number = 10;
+  else;
+    return number;
+
+}
+",0,1,0,0,
+128,120689,a52fd55f42010405991a333187181f7e,02/25/19 01:38 AM,439,1,5,e77de4e67ecd9c84c4f92e93ed7bc96eff4b9e16,1,"public int sortaSum(int a, int b)
+{
+    int sum = a+b;
+    if (sum >= 10 && sum <= 19)
+        return 20;
+    return sum;
+}
+",0,0,0,0,
+129,135674,a52fd55f42010405991a333187181f7e,02/25/19 01:42 AM,439,3,37,a02e22e30725ba059df241607131d0577446fc93,0,"public boolean in1To10(int n, boolean outsideMode)
+{
+    boolean bool = false;  
+    if (!outsideMode){
+    if (n >= 1 && n <= 10) {
+      return bool = true;
+    } else {
+        return bool =  false;
+      }
+  } else {
+      if (n <= 1 || n >= 10) {
+        return  bool = true;
+      } else {
+          return bool = false;
+        }
+    }
+return bool;
+}
+",0,0,0,1,return
+130,11090,735dd629ab696e3a1bfcc0fe0d687bb1,02/24/19 09:15 PM,439,234,2,e601d16e0e29aaf53a33c7e1f3ef0751ec0ce60c,0,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (isWeekend)
+        if (cigars >= 40)
+            return true;
+    if (cigars >= 40 || cigars <= 60)
+        return true;
+    return false;
+}
+",1,0,1,0,
+131,29825,735dd629ab696e3a1bfcc0fe0d687bb1,02/24/19 07:54 PM,439,13,1,83a02d625d637c824279f903a6fb5c1add29543f,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    super(speed, isBirthday);
+}
+
+public void isSpeeding()
+{
+    if (speed < 60)
+    {
+        ticket = 0;
+    }
+    else if (61 < speed < 80)
+    {
+        ticket = 1;
+    }
+    else (speed > 80)
+    {
+        ticket = 2;
+    }
+}
+",1,0,1,1,"function usage, return"
+132,37623,735dd629ab696e3a1bfcc0fe0d687bb1,02/24/19 09:40 PM,439,12,1,dde33041d1d8962b457d87e4721d2cb600879c65,0,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (isSummer)
+        return (temperature >= 60 && temperature <= 100);
+    return (temperature >= 60 && temperature <= 90);
+}
+",0,0,0,1,
+133,43545,735dd629ab696e3a1bfcc0fe0d687bb1,02/24/19 08:05 PM,439,232,2,5ed21648abb5313f5dd7495f260a2c77b0beab17,1,"public String alarmClock(int day, boolean vacation)
+{
+    if(vacation)
+    {
+        if(day == 0 || day == 6)
+        {
+            return ""off"";
+        }
+        else
+        {
+        return ""10:00"";
+        }
+    }
+    else
+    {
+        if(day == 0 || day == 6)
+        {
+            return ""10:00"";
+        }
+        else
+        {
+            return ""7:00"";
+        }
+    }
+}
+",0,0,0,0,
+134,60667,735dd629ab696e3a1bfcc0fe0d687bb1,02/24/19 09:13 PM,439,233,1,36a2056080f99da3edd330808d17128552645934,1,"public boolean love6(int a, int b)
+{
+    if(a == 6 || b == 6)
+        return true;
+    if(a + b == 6 || Math.abs(a-b) == 6)
+        return true;
+    return false;
+}
+",0,0,0,0,
+135,66154,735dd629ab696e3a1bfcc0fe0d687bb1,02/24/19 08:27 PM,439,5,1,490ca1a37dcda41e77316b93a43e5fada6c183d5,0,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isMorning)
+    {
+        if (isMom)
+        {
+            return true;
+        }
+    }
+    if (isAsleep)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+",0,1,0,0,
+136,69429,735dd629ab696e3a1bfcc0fe0d687bb1,02/24/19 08:08 PM,439,235,1,5f8a85f32aa9eda23f8a3e70239bbf1bfb60cae0,1,"public int dateFashion(int you, int date)
+{
+    if(you <= 2 || date <= 2)
+    {
+        return 0;
+    }
+    else if (you >= 8 || date >= 8)
+    {
+        return 2;
+    }
+    else
+    {
+        return 1;
+    }
+}
+",0,0,0,0,
+137,77580,735dd629ab696e3a1bfcc0fe0d687bb1,02/24/19 08:12 PM,439,236,1,8197feac60191c4803540981c50e87d47207b77d,0,"public int greenTicket(int a, int b, int c)
+{
+    if (a == b == c)
+    {
+        return 20;
+    }
+    else if (a == b || a == c || c == b)
+    {
+        return 10;
+    }
+    else
+    {
+        return 0;
+    }
+}
+",0,0,0,1,Three var comparison directly
+138,119978,735dd629ab696e3a1bfcc0fe0d687bb1,02/24/19 09:24 PM,439,1,1,3c82667dd33d00795c891551bfd6129dafaea9c6,1,"public int sortaSum(int a, int b)
+{
+    int sum = a + b;
+    if (sum >= 10 && sum <= 19)
+        return 20;
+    return sum;
+}
+",0,0,0,0,
+139,134955,735dd629ab696e3a1bfcc0fe0d687bb1,02/24/19 09:26 PM,439,3,1,409fa195ee1f076833eda9a6e5427928ba15ce24,0,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode == true)
+        if (n <= 1 || n >= 10)
+       return true;
+    if (n >= 1 || n <= 10)
+        return true;
+    return false;
+}
+",1,0,1,0,
+140,11791,07ae4cca3f90a49347ccb5c1a82ff46f,02/25/19 12:55 AM,439,234,1,3cde3f3e028cf5b0e4a26adc6233d17ec8d549b5,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if(isWeekend && cigars >= 40) {
+        return true;
+    } else if (!isWeekend && cigars >= 40 && cigars <=60) {
+        return true;
+    } else {
+        return false;
+    }
+}
+",0,0,0,0,
+141,33332,07ae4cca3f90a49347ccb5c1a82ff46f,02/25/19 12:25 AM,439,13,8,8227b92aad670a1a30daf4c6e3ba4b568d846dfb,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if(isBirthday) {
+        if (speed <= 65) 
+    {
+        return 0;
+        } else if (speed >= 66 && speed <=85) 
+        {
+     return 1;   
+    } else if (speed >=86)
+    {
+        return 2;
+    }
+    } else 
+    {
+        if (speed <= 60) 
+    {
+        return 0;
+        }
+    else if (speed >= 61 && speed <=80) 
+        {
+     return 1;   
+    }
+    else if (speed >=81)
+    {
+        return 2;
+    }
+    }
+    
+}
+",0,0,0,1,Condition does not cover locally impossible situations
+142,37901,07ae4cca3f90a49347ccb5c1a82ff46f,02/25/19 01:16 AM,439,12,1,6427ba53586c5b86e4cc1b30af9644f6eb64f249,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if(!isSummer && temp >= 60 && temp <= 90) {
+        return true;
+    } else if (isSummer && temp >= 60 && temp <= 100) {
+        return true;
+    } else {
+        return false;
+    }
+}
+",0,0,0,0,
+143,45055,07ae4cca3f90a49347ccb5c1a82ff46f,02/25/19 12:30 AM,439,232,1,b031bcbe7fa9010fb245dcbee815716e197c5ec9,0,"public String alarmClock(int day, boolean vacation)
+{
+    if(vacation && day != 0 && day != 6) {
+        return ""10:00"";
+    } else {
+        return ""off"";
+    }
+    
+    if(!vacation && day != 0 && day != 6) {
+        return ""7:00"";
+    } else {
+        return ""10:00"";
+    }
+}
+",0,0,1,0,
+144,61208,07ae4cca3f90a49347ccb5c1a82ff46f,02/25/19 01:05 AM,439,233,1,ccbc4472b8f5e75810aeaf12fe25ff14ea8e14e1,0,"public boolean love6(int a, int b)
+{
+    if (a == 6 || b == 6) {
+        return true;
+    } else if (a + b == 6) {
+        return true;
+    } else if (Math.abs(a - b) == 6) {
+        return true;
+    }
+}
+",0,1,0,0,
+145,66760,07ae4cca3f90a49347ccb5c1a82ff46f,02/25/19 01:03 AM,439,5,1,a28801cc5beed9aa5829a497595f58be61be89ce,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep) {
+        return false;
+    } else if (isMorning && isMom) {
+        return true;
+    } else if (isMorning) {
+        return false;
+    } else {
+        return true;
+    }
+}
+",0,0,0,0,
+146,70150,07ae4cca3f90a49347ccb5c1a82ff46f,02/25/19 12:47 AM,439,235,1,9ac43b1362b32d58b7e3398c8c7a8a5d172f140c,0,"public int dateFashion(int you, int date)
+{
+    if (you >= 8 || date >= 8) {
+        return 2;
+    } else if (you <= 2 || date <= 2) {
+        return 0;
+    } else {
+        return 1;
+    }
+}
+",0,1,0,0,
+147,78355,07ae4cca3f90a49347ccb5c1a82ff46f,02/25/19 12:58 AM,439,236,2,735b54db2e54aeff7a71e5d0661ced2808243b72,0,"public int greenTicket(int a, int b, int c)
+{
+    if (a == b && b == C) {
+        return 20;
+    } else if (a != b && b != c) {
+        return 0;  
+    } else if (a == b && b != c) {
+        return 10;
+    } else if (a == c && c != a) {
+        return 10;
+    } else if (c == b && a != b) {
+        return 10;
+    }
+        
+}
+",0,1,0,0,
+148,120609,07ae4cca3f90a49347ccb5c1a82ff46f,02/25/19 01:07 AM,439,1,1,da889825c78a08ee41c715aa2a998505c16e9026,1,"public int sortaSum(int a, int b)
+{
+    if (a + b >= 10 && a + b <= 19) {
+        return 20;
+    } else {
+        return a + b;
+    }
+}
+",0,0,0,0,
+149,135559,07ae4cca3f90a49347ccb5c1a82ff46f,02/25/19 01:12 AM,439,3,2,72c7086245ebb6deefbf7108d14232d30b9ec875,0,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (!outsideMode && n <= 10 && n >= 1) {
+        return true;
+    } else {
+        return false;
+    }
+    
+    if (outsideMode && (n <= 1 || n >= 10)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+",0,0,1,0,
+150,10135,e4191d610537305de1d294adb121b513,02/23/19 10:42 PM,439,234,3,ab423959abbbc3d30e79c095d44fe8b31ece67b8,0,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (isWeekend)
+    {
+        if (cigars >= 40)
+            {
+                return true;
+            }
+        return false;
+    }
+    
+    //if (cigars >= 40 && <= 60)
+    //{
+        return true;
+    //}
+    return false;
+}
+",1,0,1,0,
+151,25908,e4191d610537305de1d294adb121b513,02/23/19 10:16 PM,439,13,4,332ddfca4cc55f072059ff647302ea9db776229f,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if (isBirthday)
+    {
+        //code
+    }
+    else 
+    {
+        if (speed <= 60)
+        {
+            return 0;
+        }
+        
+        
+        
+    }
+        
+            
+    
+    
+}
+",1,0,1,0,
+152,37172,e4191d610537305de1d294adb121b513,02/24/19 02:00 AM,439,12,18,a18dcdaa34332ff226f0038b7f1b33976d30620e,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+if (isSummer)
+    {
+        if (temp <= 100 && temp >= 60)
+        {
+            return true;
+        }
+        return false;
+    }
+    if (temp <= 90 && temp >= 60)
+    {
+        return true;
+    }
+    return false;
+}
+",0,0,0,0,
+153,40734,e4191d610537305de1d294adb121b513,02/23/19 10:31 PM,439,232,7,515faf0089661b8a0f8d08b997d9a245dbe7218e,0,"public String alarmClock(int day, boolean vacation)
+{
+    if (vacation)
+    {
+        if (day = 6 || day = 0)
+        {
+            return ""off"";
+        }
+        return ""10:00"";
+        
+    }
+    if ( day = 6 || day = 0)
+    {
+        return ""10:00"";
+    }
+    return ""7:00"";
+    
+}
+",0,0,0,1,"Equality and assignment, if condition not covering logical "
+154,59834,e4191d610537305de1d294adb121b513,02/23/19 11:29 PM,439,233,1,40eea0906fc9f40199d887271b5725fbc9116943,0,"public boolean love6(int a, int b)
+{
+    if (a == 6 || b == 6)
+    {
+return true;
+    }
+    if (a + b == 6 || a - b == 6)
+    {
+        return true;
+    }
+    return false;
+    
+}
+",0,0,0,1,Mathabs
+155,65462,e4191d610537305de1d294adb121b513,02/23/19 11:25 PM,439,5,1,30bd6e4f634ac00704f47f0c66404a0c2d6ee3f1,0,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isMorning)
+    {
+        if (isMom)
+        {
+        return true;
+        }
+        return false;
+    }
+    return true;
+}
+",0,1,0,0,
+156,68742,e4191d610537305de1d294adb121b513,02/23/19 10:37 PM,439,235,12,76cf770d55531461d508a61f1eb2be30b0ed1326,1,"public int dateFashion(int you, int date)
+{
+    if (you <= 2 || date <=2)
+    {
+        return 0;
+    }
+    if (you >= 8 || date >= 8)
+    {
+       return 2; 
+    }
+    return 1;
+    
+}
+",0,0,0,0,
+157,76789,e4191d610537305de1d294adb121b513,02/23/19 10:51 PM,439,236,1,d1378b91664caff12c977377a7fe216292407e27,0,"public int greenTicket(int a, int b, int c)
+{
+    if ( a==b && b==c)
+    {
+        return 20;
+    }
+    if ( a != b && b != c)
+    {
+        return 0;
+    }
+    return 10;
+    
+}
+",0,0,0,0,
+158,119537,e4191d610537305de1d294adb121b513,02/23/19 11:40 PM,439,1,1,25b96bbeac5681833b52d998d07851190aba0b15,1,"public int sortaSum(int a, int b)
+{
+    int y = a+b;
+    if (y <= 19 && y >= 10)
+    {
+        return 20;
+    }
+    return y;
+    
+}
+",0,0,0,0,
+159,134180,e4191d610537305de1d294adb121b513,02/23/19 11:44 PM,439,3,40,759ff2806bd9e9b76fb2ced622f2d43451add114,0,"public boolean in1To10(int n, boolean outsideMode)
+{
+   if (outsideMode)
+   {
+       if (n <= 1 || n >= 10)
+       {
+           return true;
+       }
+   }
+   if (n>=1 && n<=10)
+   {
+return true;
+   }
+    return false;
+    
+}
+",0,0,1,0,
+160,12878,76c073d8a82d9ddaf993300be03ac70f,02/25/19 04:28 AM,439,234,3,119a6a31bba9fed7d8805c463c987c2f4d1c5fca,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if(isWeekend)
+        return 40 <= cigars;
+          
+    return 40 <= cigars && cigars <= 60;
+    
+}
+",0,0,0,0,
+161,35877,76c073d8a82d9ddaf993300be03ac70f,02/25/19 03:38 AM,439,13,5,1b31510242cd102611c9e8fd9be74ffd75257082,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    result x;
+    
+    if(speed<=60)
+    {
+        result = 0;
+    }
+    
+    if(speed >= 60 && speed <= 80)
+    {
+        result = 1;
+    }
+    
+    if(speed >= 81)
+    {
+        result = 2;
+    }
+    
+    if(isBirthday = true)
+    {
+        if(speed <=65)
+        {
+            reult = 0;
+        }
+        
+        if(speed >= 66 && speed<=85)
+        {
+            result = 1;
+        }
+        
+        if(speed >= 86)
+        {
+            result = 2;
+        }
+    }
+               
+    
+        
+        
+    
+}
+",1,0,1,1,"variable, equality, return"
+162,38712,76c073d8a82d9ddaf993300be03ac70f,02/25/19 04:32 AM,439,12,3,19646b9e5018fdd4446bc7ac523927cbabcb89ab,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if(isSummer && 60 <= temp && temp <= 100)
+        return true;
+          
+    if(!isSummer && 60 <= temp && temp <= 90)
+        return true;
+                    
+    return false;
+}
+",0,0,0,0,
+163,47640,76c073d8a82d9ddaf993300be03ac70f,02/25/19 04:22 AM,439,232,11,1e800f7b30a1b5f4a3f7cc8807c0bfe1895b49ce,0,"public String alarmClock(int day, boolean vacation)
+{
+    if (day = 1 || day = 2 || day = 3 || day = 4 || day = 5)
+        return ""7:00"";
+     if (day = 0 || day = 6)
+        return ""10:00"";
+    
+    if (vaction = true)
+    {
+        if(day = 1 || day = 2 || day = 3 || day = 4 || day = 5)
+            return ""10:00"";
+        else if (day = 0 || day = 6)
+            return ""off"";
+    }
+        
+}
+",0,0,0,1,Equality and assignment
+164,62165,76c073d8a82d9ddaf993300be03ac70f,02/25/19 04:29 AM,439,233,5,a75f5bcb656e6b2dfeb8839df79e19de56d70f34,1,"public boolean love6(int a, int b)
+{
+    if(a == 6 || b == 6 || a + b == 6 || Math.abs(a - b) == 6)
+        return true;
+          
+    return false;
+}
+",0,0,0,0,
+165,67715,76c073d8a82d9ddaf993300be03ac70f,02/25/19 04:29 AM,439,5,4,e5e684dabadb23e344972f83cd01be4718960040,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if(isAsleep)
+        return false;
+          
+    if(isMorning && !isMom)
+        return false;
+                    
+    return true;
+    
+}
+",0,0,0,0,
+166,71037,76c073d8a82d9ddaf993300be03ac70f,02/25/19 04:27 AM,439,235,4,8d14d62aed50ad203d6592bb243b0e2685889709,1,"public int dateFashion(int you, int date)
+{
+    if(you <= 2 || date <= 2)
+        return 0;
+          
+    if(you >= 8 || date >= 8)
+        return 2;
+                    
+    return 1;
+    
+}
+",0,0,0,0,
+167,79590,76c073d8a82d9ddaf993300be03ac70f,02/25/19 04:28 AM,439,236,3,efeb40c7dea8736e1d6832bdf6b5cbf373d80919,1,"public int greenTicket(int a, int b, int c)
+{
+    if (a == b && b == c)
+
+    return 20;
+
+  if (a == b || a == c || b == c)
+
+    return 10;
+
+  else;
+
+    return 0;
+
+    
+}
+",0,0,0,0,
+168,121234,76c073d8a82d9ddaf993300be03ac70f,02/25/19 04:31 AM,439,1,14,cee452e4aa16baeb8604da51705be7c6342ae49b,1,"public int sortaSum(int a, int b)
+{
+    int sum = a+b;
+
+   
+
+  if(sum >= 10 && sum <= 19)
+
+    return 20;
+
+  else
+
+    return sum;
+
+    
+}
+",0,0,0,0,
+169,136729,76c073d8a82d9ddaf993300be03ac70f,02/25/19 04:32 AM,439,3,16,8815ba5866cc9a585a596ea701e2e3407259d5f4,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+   if (!outsideMode){
+
+    if (n >= 1 && n <= 10) {
+
+      return true;
+
+    } else {
+
+        return false;
+
+      }
+
+ } else {
+
+      if (n <= 1 || n >= 10) {
+
+        return true;
+
+      } else {
+
+          return false;
+
+        }
+
+    }
+ 
+}
+",0,0,0,0,
+170,12812,1aabb3fa1280144bf946da37d00c05f1,02/25/19 04:11 AM,439,234,1,46378071e6eefb45e0f365a5dada6e84677befa1,0,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (isWeekend == true)
+    {
+        if (cigars >= 40)
+        {
+            return true;
+        }
+    }
+    else if (cigars >= 40 && cigars <= 60)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+",0,0,1,0,
+171,35997,1aabb3fa1280144bf946da37d00c05f1,02/25/19 03:49 AM,439,13,2,3a48aad6e533968217dd036741cab032ab694be7,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if (isBirthday = true)
+    {
+        speed = speed + 5;
+    }
+    if (speed >= 81)
+    {
+        return 2;
+    }
+    else if (speed < 81 && speed >= 61)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+",0,0,1,1,Equality and assignment
+172,38706,1aabb3fa1280144bf946da37d00c05f1,02/25/19 04:30 AM,439,12,1,604a57066a0d33a4f0320c8ff38e76ea6a9f68d3,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (isSummer == true)
+    {
+        if (temp >= 60 && temp <= 100)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    if (temp >= 60 && temp <= 90)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+",0,0,0,0,
+173,47190,1aabb3fa1280144bf946da37d00c05f1,02/25/19 03:56 AM,439,232,2,8b3eff7a5dd626c46dd24f0bbeb426f72e2f3c3b,0,"public String alarmClock(int day, boolean vacation)
+{
+    if (vacation == true)
+    {
+        if (day > 0 && day <= 5)
+        {
+            return ""10:00"";
+        }
+        else
+        {
+            return ""off"";
+        }
+    if (day > 0 && day <= 5)
+    {
+        return ""7:00"";
+    }
+    else
+    {
+        return ""10:00"";
+    }
+    }
+}
+",0,1,0,1,Java not covering logically correct conditions
+174,62141,1aabb3fa1280144bf946da37d00c05f1,02/25/19 04:22 AM,439,233,1,928a160e50bc26ffca361f9e6ff8446e50396ea7,0,"public boolean love6(int a, int b)
+{
+    if (Math.abs(a) == 6 || Math.abs(b) == 6)
+    {
+        return true;
+    }
+    else if ((Math.abs(a) + Math.abs(b) == 6) || (Math.abs(a) - Math.abs(b) == 6))
+    {
+        return true;
+    }
+    else if (Math.abs(b) - Math.abs(a) == 6)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+",0,0,0,1,Mathabs
+175,67689,1aabb3fa1280144bf946da37d00c05f1,02/25/19 04:18 AM,439,5,1,9ab3b5419f5e2d7073461b30d77712cf6467d7d8,0,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep == true)
+    {
+        return false;
+    }
+    else if (isMorning == true && isMom  == true)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+",0,1,0,0,
+176,70963,1aabb3fa1280144bf946da37d00c05f1,02/25/19 03:58 AM,439,235,1,c585ac4fda00fc10325c8e5f053b446658781a6e,1,"public int dateFashion(int you, int date)
+{
+    if (you <= 2 || date <= 2)
+    {
+        return 0;
+    }
+    else if (you >= 8 || date >= 8)
+    {
+        return 2;
+    }
+    else
+    {
+        return 1;
+    }
+}
+",0,0,0,0,
+177,79490,1aabb3fa1280144bf946da37d00c05f1,02/25/19 04:16 AM,439,236,2,fbd4c23e76bef6c785eaeac729ab320635a7682b,0,"public int greenTicket(int a, int b, int c)
+{
+    if (a == b == c)
+    {
+        return 20;
+    }
+    else if ((a == b && a != c) || (a == c && a != b) || (b == c && a != b))
+    {
+        return 10;
+    }
+    else
+    {
+        return 0;
+    }
+}
+",0,0,0,1,Three var comparison directly
+178,121226,1aabb3fa1280144bf946da37d00c05f1,02/25/19 04:25 AM,439,1,1,7b8dcdc142a00fde13d0c4dbefd733b29669ff27,1,"public int sortaSum(int a, int b)
+{
+    int sum = a + b;
+    if (sum <= 19 && sum >= 10)
+    {
+        return 20;
+    }
+    else
+    {
+        return sum;
+    }
+}
+",0,0,0,0,
+179,136720,1aabb3fa1280144bf946da37d00c05f1,02/25/19 04:28 AM,439,3,3,80db1307d02812c1166391b4f628698638dd3a7a,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode == true)
+    {
+        if (n <= 1 || n >= 10)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    if (n >= 1 && n <= 10)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+",0,0,0,0,
+180,12672,27059a11c58ade9b03bde05c2ca7c285,02/25/19 03:34 AM,439,234,2,b5d77ee7c01c774391ef1972a3aa8db225369cc9,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (isWeekend && cigars >= 40)
+        return true;
+    else if (cigars >= 40 && cigars <= 60)
+        return true;
+    else 
+        return false;
+}
+",0,0,0,0,
+181,35586,27059a11c58ade9b03bde05c2ca7c285,02/25/19 03:28 AM,439,13,19,8bf7407e85a3b9588b0f05644293e84284b753be,1,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if (!(isBirthday))
+    {
+        if (speed <= 60)
+    
+        return 0;
+    
+        if (speed > 60 && speed <= 80)
+        
+            return 1;
+        
+        else 
+        
+            return 2;
+        }
+    else if (speed <= 65)
+        return 0;
+    else if (speed > 65 && speed <= 85)
+        return 1;
+    else 
+        return 2;
+   
+ 
+}
+",0,0,0,0,
+182,38478,27059a11c58ade9b03bde05c2ca7c285,02/25/19 03:36 AM,439,12,14,c0c5c9fee901ebce9a216561b7f4cd3b3bbfbe90,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (isSummer && temp >= 60 && temp <= 100)
+        return true;
+    else if (temp >= 60 && temp <= 90)
+        return true;
+    else 
+        return false;
+}
+",0,0,0,0,
+183,46949,27059a11c58ade9b03bde05c2ca7c285,02/25/19 03:31 AM,439,232,7,eb0bf0ff81db52963f3e038fa032aee3162e1a10,1,"public String alarmClock(int day, boolean vacation)
+{
+    if (vacation)
+    {
+        if (day == 0 || day == 6)
+            return ""off"";
+        else 
+            return ""10:00"";
+    }
+    
+    if (day == 0 || day == 6)
+    
+        return ""10:00"";
+    return ""7:00"";
+        
+    
+}
+",0,0,0,0,
+184,62002,27059a11c58ade9b03bde05c2ca7c285,02/25/19 03:38 AM,439,233,2,873170573acc8c90d53cbdc80d4a88a63bbd955d,1,"public boolean love6(int a, int b)
+{
+    if (a == 6 || b == 6 || a + b == 6 || a  -Math.abs(b) == 6 || Math.abs(b) - Math.abs(a) == 6)
+        return true;
+    else
+        return false;
+}
+",0,0,0,0,
+185,67556,27059a11c58ade9b03bde05c2ca7c285,02/25/19 03:42 AM,439,5,2,8853dd5c4f23dc28ba83afdf511b5d5452d44a8e,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep)
+        return false;
+    if (isMorning && !isMom)
+        return false;
+    return true;
+}
+",0,0,0,0,
+186,70807,27059a11c58ade9b03bde05c2ca7c285,02/25/19 03:32 AM,439,235,2,9b64cbe6b1c922cbd2e3670803e909985d9fa182,1,"public int dateFashion(int you, int date)
+{
+    if (you <= 2 || date <= 2)
+        return 0;
+    if (you >= 8 || date >= 8)
+        return 2;
+    return 1;
+}
+",0,0,0,0,
+187,79283,27059a11c58ade9b03bde05c2ca7c285,02/25/19 03:41 AM,439,236,2,5ba8867472a774992529ec0efdd84c077603594d,1,"public int greenTicket(int a, int b, int c)
+{
+    if (a == b && b == c)
+        return 20;
+    if (a == b || a == c || b == c)
+        return 10;
+    else
+        return 0;
+}
+",0,0,0,0,
+188,121081,27059a11c58ade9b03bde05c2ca7c285,02/25/19 03:38 AM,439,1,2,3609e8cca7b7e0e1705dcc040c7fa214458e278d,1,"public int sortaSum(int a, int b)
+{
+    if (a + b >= 10 && a + b <= 19)
+        return 20;
+    else
+        return a + b;
+}
+",0,0,0,0,
+189,136464,27059a11c58ade9b03bde05c2ca7c285,02/25/19 03:40 AM,439,3,2,d53223c9dc6666abf3b586fb4df33030b8310105,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode)
+    {
+        if (n <= 1 || n >= 10)
+            return true;
+        else 
+            return false;
+    }
+    if (n >=1 && n <=10)
+        return true;
+    else
+        return false;
+}
+",0,0,0,0,
+190,9500,d185c5ed37536ac0063f735f7a15dd24,02/21/19 03:26 PM,439,234,1,1f560f2a7dbc8476881769ae396cbf0f64a30c2b,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (isWeekend) {
+        if (cigars > 39) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    else if (cigars > 39 && cigars < 61) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+",0,0,0,0,
+191,22264,d185c5ed37536ac0063f735f7a15dd24,02/21/19 03:13 PM,439,13,1,761182192da5c925038e5dad89aadbf7b0933026,1,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if (!isBirthday) {
+        if (speed < 61) {
+            return 0;
+        }
+        else if (speed < 81) {
+            return 1;
+        }
+        else {
+            return 2;
+        }
+    }
+    else {
+        if (speed < 66) {
+            return 0;
+        }
+        else if (speed < 86) {
+            return 1;
+        }
+        else {
+            return 2;
+        }
+    }
+            
+}
+",0,0,0,0,
+192,36765,d185c5ed37536ac0063f735f7a15dd24,02/21/19 03:42 PM,439,12,1,2bf1c04d9d27c1634b52289bf71e91e6ac7b6c7e,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (isSummer) {
+        if (temp >= 60 && temp <= 100) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    else if (temp >= 60 && temp <= 90) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+",0,0,0,0,
+193,39062,d185c5ed37536ac0063f735f7a15dd24,02/21/19 03:17 PM,439,232,8,cf5d74d76d9a1aa7b52fda46163ef546669b9c74,0,"public String alarmClock(int day, boolean vacation)
+{
+    if (vacation) {
+        if (day = 0 || day = 6) {
+            return ""off"";
+        }
+        else {
+            return ""10:00"";
+        }
+    }
+    else {
+        if (day = 0 || day = 6) {
+            return ""10:00"";
+        }
+        else {
+            return ""7:00"";
+        }
+    }
+}
+",0,0,0,1,Equality and assignment
+194,59243,d185c5ed37536ac0063f735f7a15dd24,02/21/19 03:34 PM,439,233,1,8e1fd0dd3e98508d52ecbeea9d9b4f002464405a,1,"public boolean love6(int a, int b)
+{
+    if (a == 6 || b == 6) {
+        return true;
+    }
+    else if (a + b == 6 || a - b == 6 || b - a == 6 || 
+             b + a == 6) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+",0,0,0,0,
+195,64685,d185c5ed37536ac0063f735f7a15dd24,02/21/19 03:31 PM,439,5,1,40ab4e2960425a0daa6d678523108587db22addf,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep) {
+        return false;
+    }
+    if (isMorning) {
+        if (isMom) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    else {
+        return true;
+    }
+}
+",0,0,0,0,
+196,67953,d185c5ed37536ac0063f735f7a15dd24,02/21/19 03:23 PM,439,235,1,afaf612ed3535d4de5bd088c7f2e2e8b80fd442e,1,"public int dateFashion(int you, int date)
+{
+    if (you < 3 || date < 3) {
+        return 0;
+    }
+    else if (you > 7 || date > 7) {
+        return 2;
+    }
+    else {
+        return 1;
+    }
+}
+",0,0,0,0,
+197,75995,d185c5ed37536ac0063f735f7a15dd24,02/21/19 03:28 PM,439,236,1,6618f8f48c115c209372989def19b6afeb3d2a7d,0,"public int greenTicket(int a, int b, int c)
+{
+    if (a == b == c) {
+        return 20;
+    }
+    else if (a == b || b == c || a == c) {
+        return 10;
+    }
+    else {
+        return 0;
+    }
+}
+",0,0,0,1,Three var comparison directly
+198,118925,d185c5ed37536ac0063f735f7a15dd24,02/21/19 03:37 PM,439,1,5,a31e2ec7e30b46db7db29b0f23387896fceaf1d1,0,"public int sortaSum(int a, int b)
+{
+    int c;
+    a + b = c;
+    if (c < 20 && c > 9) {
+        return 20;
+    }
+    else {
+        return c;
+    }
+}
+",0,0,0,1,variable
+199,133325,d185c5ed37536ac0063f735f7a15dd24,02/21/19 03:40 PM,439,3,1,bf7a2bba9dbc410dd653796ad1ecf6154444c59b,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode) {
+        if (n <= 1 || n >= 10) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    else if (n >= 1 && n <= 10) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+",0,0,0,0,
+200,12884,1b6171ff276542bd344c1600aaca6165,02/25/19 04:34 AM,439,234,3,6ef68e8e89f00b3ed079a48c6f9869b2990cc3be,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (isWeekend) 
+        return 40 <= cigars;
+    
+    return 40 <= cigars && cigars <= 60;
+}
+",0,0,0,0,
+201,36183,1b6171ff276542bd344c1600aaca6165,02/25/19 04:24 AM,439,13,20,188099daee8da265f6236d3c4f85b4c4540e62ff,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    if(isBirthday) { 
+        if (speed <= 65) {
+            return 0;
+        }
+        else if (66<= speed && speed <= 85) {
+            return 1;
+        }
+        else if (86 <= speed) { 
+            return 2;
+        }
+    }
+}
+",0,0,1,0,
+202,38737,1b6171ff276542bd344c1600aaca6165,02/25/19 04:43 AM,439,12,7,2e44c5194bfd36da4d7cd115f22801214c0bf72d,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if ( temp >= 60 && temp <= 90)
+        return true;
+    if ( temp >= 60 && temp <= 100 && isSummer == true)
+        return true;
+        else 
+        return false;
+}
+",0,0,0,0,
+203,47770,1b6171ff276542bd344c1600aaca6165,02/25/19 04:32 AM,439,232,2,4119fe3378cffd4992a6f7c1275cccee4e294ff7,1,"public String alarmClock(int day, boolean vacation)
+{
+    if (vacation) {
+        if (day == 0 || day == 6)
+            return ""off"";
+        else 
+            return ""10:00"";
+    }
+    
+    if (day == 0 || day == 6)
+        return ""10:00"";
+    return ""7:00"";
+}
+",0,0,0,0,
+204,62218,1b6171ff276542bd344c1600aaca6165,02/25/19 04:38 AM,439,233,6,e731c0e6c26538f34433fe52ee9f75d60c22fd66,1,"public boolean love6(int a, int b)
+{
+    if (a == 6 || b == 6 || a + b == 6 || Math.abs(a-b) == 6)
+        return true;
+    return false;
+}
+",0,0,0,0,
+205,67794,1b6171ff276542bd344c1600aaca6165,02/25/19 04:37 AM,439,5,7,7cd3748e10c40be333315fc8c36129e718d926ce,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (isAsleep) 
+        return false;
+        if (isMorning && !isMom)
+            return false;
+        return true;
+}
+",0,0,0,0,
+206,71061,1b6171ff276542bd344c1600aaca6165,02/25/19 04:33 AM,439,235,3,80b4b35083a99fa22a6803a437ae7022790a5c16,1,"public int dateFashion(int you, int date)
+{
+    if (you <= 2 || date <= 2)
+        return 0; 
+    
+    if (you >= 8 || date >= 8)
+        return 2; 
+    
+    return 1;
+}
+",0,0,0,0,
+207,79640,1b6171ff276542bd344c1600aaca6165,02/25/19 04:35 AM,439,236,4,0a1cdb8505a2fae3d7cf390d9ab8dad774e48021,1,"public int greenTicket(int a, int b, int c)
+{
+    if (a == b) {
+        if (b == c)
+            return 20; 
+        return 10;
+    }
+    if (a == c || b == c)
+        return 10;
+    return 0;
+}
+",0,0,0,0,
+208,121266,1b6171ff276542bd344c1600aaca6165,02/25/19 04:40 AM,439,1,2,382715e16ab90ea85e1a388239c58a0de86e5e9e,1,"public int sortaSum(int a, int b)
+{
+    if (a + b >= 10 && a + b <= 19)
+        return 20;
+    else return (a + b);
+}
+",0,0,0,0,
+209,136760,1b6171ff276542bd344c1600aaca6165,02/25/19 04:41 AM,439,3,7,85c905c357c9510de0a1635897e52dd20c73311b,0,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if (outsideMode == false && n >= 1 && n <= 10)
+        return true;
+    if (outsideMode == true && n <= 1 || n >=10)
+        return true;
+    else return false;
+}
+",0,0,0,1,logic operation priority
+210,35391,8a1df180ea2c0d298aa1d739fe720a0c,02/25/19 03:19 AM,439,13,4,fdf1f3d6a543dafa7c6c111c8b8ada21a2f0a57b,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{ 
+    if (speed <= 60)
+{
+    return noTicket;
+}
+ else if (speed <= 80 || speed >= 61)
+ {
+    return smallTicket;
+ }
+ else if (speed > 81)
+ {
+     return bigTicket;
+ }
+}
+else
+{
+    if (speed <= 65)
+    {
+    return noTicket;
+    }
+ else if (speed <= 85 || speed >= 66)
+    {
+        return smallTicket;
+    }
+ else if (speed > 86)
+    {
+        return bigTicket;
+    }
+    
+}
+",1,0,1,1,variable
+211,47530,8a1df180ea2c0d298aa1d739fe720a0c,02/25/19 04:15 AM,439,232,2,af41a5260c7ceef6f35387a4818330b580fbbbe6,0,"public String alarmClock(int day, boolean vacation)
+{
+    if(onVacation)
+{
+    alarmClock(0, false) -> ""7:00"";
+            alarmClock(1, false) -> ""7:00"";
+            alarmClock(2, false) -> ""7:00"";
+            alarmClock(3, false) -> ""7:00"";
+            alarmClock(4, false) -> ""7:00"";
+            alarmClock(5, false) -> ""7:00"";
+            alarmClock(6, false) -> ""10:00"";
+    }
+    
+    
+}
+",1,0,1,1,not logical
+212,12525,4a914e5c38172ae9b61780ffbd0b2f90,02/25/19 02:35 AM,439,234,2,4e1a4e806b3dc5029771b05b87f3ab47ebe3499b,1,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (cigars >= 40 && isWeekend == true)
+    {
+        return true; 
+    }
+    
+    else if (cigars >= 40 && cigars <= 60 && isWeekend == false )
+    {
+        return true;
+    }
+    
+    else 
+    {
+        return false;
+    }
+    
+}
+",0,0,0,0,
+213,26795,4a914e5c38172ae9b61780ffbd0b2f90,02/24/19 02:39 AM,439,13,3,dd3c9bdfebde70af857fecb6c5e8821b0952dbe2,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    0 = noticket;
+    1 = smallticket;
+    2 = bigticket;
+    
+    
+    if (speed <= 60)  
+    {
+        printf(0);
+    }
+    
+    else if (speed > 60 && speed <=80)
+    {
+        printf(1);
+    }
+    
+    else
+    {
+        printf(2);
+    }
+    
+    
+}
+",0,0,1,1,
+214,38507,4a914e5c38172ae9b61780ffbd0b2f90,02/25/19 03:45 AM,439,12,1,75c19c8b466a496dd00a319270fce7b84e0cea13,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if ((temp >= 60 && temp <= 90) && !isSummer)
+    {
+        return true;
+    }
+    
+    if ((temp >= 60 && temp <= 100) && isSummer)
+    {
+        return true;
+    }
+    
+    else 
+    {
+        return false;
+    }
+}
+",0,0,0,0,
+215,47385,4a914e5c38172ae9b61780ffbd0b2f90,02/25/19 04:10 AM,439,232,3,d35e5687143588a15ce9c9f80a21586b05a1f672,0,"public String alarmClock(int day, boolean vacation)
+{
+    if (!vacation)
+    {
+        if (day >= 1 && day <= 5)
+        {
+            return ""7:00"" ;
+        }
+        
+        else if (day == 6 && day == 0)
+        {
+            return ""10:00"" ;
+        }
+    }
+    else
+    {
+        if (day >= 1 && day <= 5)
+        {
+            return ""10:00"" ;
+        }
+        
+        else if (day == 6 && day == 0)
+        {
+            return off;
+        }
+          
+        
+    }
+    
+}
+",0,0,0,1,"if not covering logically correct branches, variable"
+216,61828,4a914e5c38172ae9b61780ffbd0b2f90,02/25/19 03:13 AM,439,233,2,e90681d5926f67eb9981cfeb8bf08c32b07e6417,0,"public boolean love6(int a, int b)
+{
+    if ( (a = 6 || b = 6) || (Math.abs(a - b) = 6 || Math.abs(a+b) = 6))
+        {
+            return true;
+        }
+        
+        else 
+        {
+            return false;
+        }
+    
+}
+",0,0,0,1,Equality and assignment
+217,67263,4a914e5c38172ae9b61780ffbd0b2f90,02/25/19 02:52 AM,439,5,1,eacb46b5f61d6d062028bd7d8a3f6ed3b91d04af,0,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if ( isMorning == true && isMom == true)
+    {
+        return true;
+    }
+    
+    else if (isAsleep == false)
+    {
+        return true;
+    }
+    
+}
+",0,1,0,0,
+218,70602,4a914e5c38172ae9b61780ffbd0b2f90,02/25/19 02:16 AM,439,235,1,dd01943f9b5bef06eaeea7d1282fe7b0dcba25f3,0,"public int dateFashion(int you, int date)
+{
+    result = 0;
+    if (you >= 8 || date >= 8)
+    {
+        result = 2;
+    }
+    
+    if (you <=2 || date <= 2)
+    {
+        result = 0;
+    }
+    
+    else 
+    {
+        result = 1;
+    }
+    
+    return ""result"";
+}
+",0,1,0,1,variable
+219,78984,4a914e5c38172ae9b61780ffbd0b2f90,02/25/19 02:42 AM,439,236,2,a4a99035f1280633764d587210545921ce97e1d9,0,"public int greenTicket(int a, int b, int c)
+{
+    if ( b=a && c=a)
+    {
+        return 20;
+    }
+    
+    if (b = a || b = c || a = c)
+    {
+        return 10;
+    }
+    
+    else
+    {
+        return 0;
+    }
+    
+}
+",0,0,0,1,Equality and assignment
+220,121023,4a914e5c38172ae9b61780ffbd0b2f90,02/25/19 03:21 AM,439,1,1,a218d27ea1b6d02ecaf0029dc4f2af1afb3f14bf,1,"public int sortaSum(int a, int b)
+{
+    if ((a+b) >= 10 && (a+b) <= 19)
+    {
+        return 20;
+    }
+    
+    else
+    {
+        return a+b;
+    }
+    
+}
+",0,0,0,0,
+221,136421,4a914e5c38172ae9b61780ffbd0b2f90,02/25/19 03:32 AM,439,3,1,b51f878c90a074a0086180dbb241f4a9425caf84,0,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if ((n >= 1 && n <= 10) && (!outsideMode))
+    {
+        return true;
+    }
+    
+    if ((n <= 1) && (outsideMode))
+    {
+        return true;
+    }
+    
+    else
+    {
+        return false;
+    }
+    
+}
+",1,0,0,0,
+222,10313,47c25f64f2b40398afb5cd9e67e53f28,02/24/19 01:14 AM,439,234,1,da73b841a248d142a28576d3a454717c0bf20274,0,"public boolean cigarParty(int cigars, boolean isWeekend)
+{
+    if (!isweekend)
+    {
+        if (cigar >= 40 && cigar <= 60 )
+        {
+            return true;
+        }
+        
+        else
+        {
+            return false;
+        }
+    
+    }
+    
+    else 
+    {
+        if (cigar >= 40 )
+        {
+            return true;
+        }
+        
+        else
+        {
+            return false;
+        }
+    }
+}
+",0,0,0,1,typo
+223,26618,47c25f64f2b40398afb5cd9e67e53f28,02/24/19 12:51 AM,439,13,2,fac1e12bfec0c90865ba3c43d3baabac693e6844,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+    realspeed = speed;
+    
+    if (isBirthday)
+    {
+        realspeed = realspeed - 5; 
+    }
+    
+    
+    if (realspeed <= 60)
+    {
+        return 0;
+    }
+    
+    else if (realspeed >= 61  && realspeed <= 81)
+    {
+        return 1;
+    }
+    
+    else 
+    {
+        return 2;
+    }
+        
+}
+",1,0,0,1,define variable
+224,37163,47c25f64f2b40398afb5cd9e67e53f28,02/24/19 01:35 AM,439,12,1,7ef45ae43bd979da5561b8458ab198bacbbf985d,1,"public boolean squirrelPlay(int temp, boolean isSummer)
+{
+    if (!isSummer)
+    {
+        if ( temp >=  60 && temp <= 90)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    else
+    {
+        if ( temp >=  60 && temp <= 100)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
+",0,0,0,0,
+225,41368,47c25f64f2b40398afb5cd9e67e53f28,02/24/19 01:04 AM,439,232,2,c6b74a206889ea96985c0ba30cf44975254489df,0,"public String alarmClock(int day, boolean vacation)
+{
+    if (vacation)
+    {
+    if ( day <= 5)
+        {
+            return ""10:00"";
+        }
+        
+        else 
+        {
+            return ""off"";
+        }
+    }
+    
+    else 
+    {
+        if ( day <= 5)
+        {
+            return ""7:00"";
+        }
+        
+        else 
+        {
+            return ""10:00"";
+        }
+    }
+}
+",1,0,0,0,
+226,59898,47c25f64f2b40398afb5cd9e67e53f28,02/24/19 01:25 AM,439,233,1,90f51ceb993d45f2f6551682aab095f1d1c43e79,1,"public boolean love6(int a, int b)
+{
+    if ( a == 6 || b == 6 || a-b == 6 || b-a ==6 || a+b ==6)
+    {
+        return true;
+    }
+    
+    else 
+    {
+        return false;
+    }
+}
+",0,0,0,0,
+227,65525,47c25f64f2b40398afb5cd9e67e53f28,02/24/19 01:22 AM,439,5,1,1f39c2a1dab9aca0faacddd9e29978a83bdaf261,1,"public boolean answerCell(boolean isMorning, boolean isMom, boolean isAsleep)
+{
+    if (!isAsleep)
+    {
+        if (isMom)
+        {
+            return true;
+        }
+        
+        else
+        {
+            if (!isMorning)
+            {
+                return true;
+            }  
+            else 
+            {
+                return false;
+            }
+        }
+        
+    }
+    else 
+    {
+        return false;
+    }
+}
+",0,0,0,0,
+228,68927,47c25f64f2b40398afb5cd9e67e53f28,02/24/19 01:08 AM,439,235,1,f2d746c95b99674a8d6782dbbf9286f0302829da,0,"public int dateFashion(int you, int date)
+{
+    if ( you >= 8 || date >=8)
+    {
+        return 2;
+    }
+    
+    else if ( you <= 2 || date <= 2)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
+",0,1,0,0,
+229,76896,47c25f64f2b40398afb5cd9e67e53f28,02/24/19 01:18 AM,439,236,2,d30fe3a397de49e23d161bb2fde5f96c1895bf95,0,"public int greenTicket(int a, int b, int c)
+{
+    if ( a == b && b == c)
+    {
+        return 20;
+    }
+    
+    else if ( a == b || a == c)
+    {
+        return 10;
+    }
+    
+    else 
+    {
+        return 0;
+    }
+    
+}
+",0,0,0,0,
+230,119564,47c25f64f2b40398afb5cd9e67e53f28,02/24/19 01:29 AM,439,1,1,7c7cc9cd5a3094130500bccfc36c5732dc08cb47,1,"public int sortaSum(int a, int b)
+{
+    if ( Integer.sum(a,b) >= 10 && Integer.sum(a,b) <= 19)
+    {
+        return 20;
+    }
+    
+    else 
+    {
+        return Integer.sum(a,b);
+    }
+}
+",0,0,0,0,
+231,134211,47c25f64f2b40398afb5cd9e67e53f28,02/24/19 01:33 AM,439,3,1,84b63da8639d80680eb7c605093d698360879b96,1,"public boolean in1To10(int n, boolean outsideMode)
+{
+    if ( outsideMode)
+    {
+        if (n <= 1 || n >= 10)
+        {
+            return true;
+        }
+        
+        else 
+        {
+            return false;
+        }
+    }
+    
+    else 
+    {
+        if ( n >= 1 && n <= 10)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
+",0,0,0,0,
+232,34967,907372450aa412b4647b9b8a64967f71,02/25/19 02:19 AM,439,13,4,dab636b634b4fcebfdd06dba022dfe603a1cc0d1,0,"public int caughtSpeeding(int speed, boolean isBirthday)
+{
+if (speed = 0);
+    return ""no ticket"";
+         
+     
+    
+    
+}
+",1,0,1,1,
+233,46719,907372450aa412b4647b9b8a64967f71,02/25/19 02:58 AM,439,232,3,b62b2aacb8b36a2d4c88c9302e05aa769a74c64e,0,"public String alarmClock(int day, boolean vacation)
+{
+    if (alarmClock(1, false))
+    {
+        return ""7:00"";
+    }
+    
+}
+",1,0,1,1,
